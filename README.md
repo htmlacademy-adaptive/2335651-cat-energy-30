@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Татьяна Карпова](https://up.htmlacademy.ru/adaptive/30/user/2335651).
-* Наставник: `Неизвестно`.
+* Наставник: Сергей Остаповец (https://htmlacademy.ru/profile/seraphim).
 
 ---
 

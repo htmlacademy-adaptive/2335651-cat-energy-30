@@ -5,12 +5,20 @@
     <title>Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo logo--header" href="#">
-      <img class="logo__image" src="images/logo-header.svg" width="202" height="59" alt="Логотип Кэт энерджи">
+      <picture>
+        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo-desktop.svg">
+        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -36,13 +44,22 @@
       <p class="main-container__slogan">Занялся собой? Займись котом!</p>
       <a class="main-container__botton main-button" href="form.html">Подобрать программу</a>
     </div>
+    <picture>
+      <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
+      <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+      <img src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
+    </picture>
 
     <section class="programs">
       <div class="programs__wrapper">
         <h2 class="visually-hidden">Выбрать программу</h2>
         <ul class="programs__list">
           <li class="programs__item">
-            <img class="programs__image" src="#" width="100" height="106" alt="Иконка кота">
+            <picture>
+              <source width="100" height="106" type="image/svg+xml" media="(min-width: 1200px)" srcset="images/icon-slim-desktop.svg">
+              <source width="200" height="211" type="image/svg+xml" media="(min-width: 768px)" srcset="images/icon-slim-tablet.svg">
+              <img class="program__image" src="images/icon-slim-mobile.svg" width="50" height="53" alt="Иконка кота">
+            </picture>
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__description">
               Ваш кот весит больше собаки и почти утратил способность
@@ -52,7 +69,11 @@
             <a class="programs-link" href="#">Каталог Slim</a>
           </li>
           <li class="programs__item">
-            <img class="programs__image" src="#" width="134" height="100" alt="Иконка кота">
+            <picture>
+              <source width="134" height="100" type="image/svg+xml" media="(min-width: 1200px)" srcset="images/icon-pro-desktop.svg">
+              <source width="268" height="200" type="image/svg+xml" media="(min-width: 768px)" srcset="images/icon-pro-tablet.svg">
+              <img class="program__image" src="images/icon-pro-mobile.svg" width="67" height="50" alt="Иконка кота">
+            </picture>
             <h3 class="programs__title">Набор массы</h3>
             <p class="programs__description">
               Заработать авторитет среди дворовых котов и даже собак?
@@ -128,8 +149,14 @@
           Затраты на питание: <span class="expenses-number">15 000 руб.</span>
         </p>
       </div>
-      <img class="example__image-before" src="#" width="560" height="512" alt="Толстый кот">
-      <img class="example__image-after" src="#" width="560" height="512" alt="Худой кот">
+      <picture>
+        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+        <img class="example__image-after" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
+      </picture>
+      <picture>
+        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+        <img class="example__image-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Худой кот">
+      </picture>
     </section>
 
     <section class="address">

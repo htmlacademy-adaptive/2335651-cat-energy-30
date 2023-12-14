@@ -1,5 +1,5 @@
 .example {
-  background-color: #f2f2f2;
+  background-color: $secondary-bg-color;
 }
 
 .example__title {
@@ -11,6 +11,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  color: $secondary-color;
 }
 
 .example__number {
@@ -24,6 +25,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: lowercase;
+  color: $secondary-color;
 }
 
 .example__number--secondary,
@@ -31,4 +33,5 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #000000;
 }

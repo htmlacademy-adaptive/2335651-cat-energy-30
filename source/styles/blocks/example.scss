@@ -14,6 +14,15 @@
   color: $secondary-color;
 }
 
+.example__item {
+  &--secondary {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
 .example__number {
   font-size: 30px;
   line-height: 37px;
@@ -26,12 +35,4 @@
   line-height: 14px;
   text-transform: lowercase;
   color: $secondary-color;
-}
-
-.example__number--secondary,
-.example__description--secondary {
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
 }

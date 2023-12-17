@@ -19,5 +19,40 @@
 }
 
 .add-products__info {
+  background: url("../../images/catalog-bacground-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background: url("../../images/catalog-bacground-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1400px) {
+    background: url("../../images/catalog-bacground-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.add-products__background {
   background-color: rgba(104, 183, 56, 0.85);
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  width: 280px;
+  min-height: 290px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    min-height: 200px;
+  }
+
+  @media (min-width: 1400px) {
+    width: 245px;
+    min-height: 288px;
+  }
+}
+
+.add-products__button {
+  @include button;
 }

@@ -13,3 +13,7 @@
   line-height: 20px;
   color: $secondary-color;
 }
+
+.card__button {
+  @include button;
+}

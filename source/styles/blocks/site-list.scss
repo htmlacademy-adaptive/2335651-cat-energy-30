@@ -1,11 +1,7 @@
-.site-list {
-  list-style-type: none;
-}
-
 .site-list__link {
   line-height: 26px;
   text-transform: uppercase;
-  color: #111111;
+  color: $basic-black;
 }
 
 .site-list__link--index {

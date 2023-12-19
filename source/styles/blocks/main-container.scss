@@ -8,20 +8,7 @@
 }
 
 .main-container__background {
-  background: url("../../images/index-background-mobile@1x.jpg") no-repeat;
-
-  @media (min-width: 768px) {
-    background: none;
-  }
-
-  @media (min-width: 1400px) {
-    background: url("../../images/index-background@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-
-.main-container__color {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: $basic-green-light;
 }
 
 .main-container__subtitle {

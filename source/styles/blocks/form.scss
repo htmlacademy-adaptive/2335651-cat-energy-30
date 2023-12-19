@@ -2,12 +2,8 @@
   @include subtitle;
 }
 
-.form__list {
-  list-style-type: none;
-}
-
 .form__note {
-  font-family: "Lato", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
 }

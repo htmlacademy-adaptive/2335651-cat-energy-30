@@ -1,9 +1,9 @@
 .card {
-  background-color: $secondary-bg-color;
+  background-color: $basic-grey;
 }
 
 .card__link-title {
-  color: #222222;
+  color: $dark-grey;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -11,7 +11,7 @@
 .card__content {
   font-size: 16px;
   line-height: 20px;
-  color: $secondary-color;
+  color: $dark-grey-light;
 }
 
 .card__button {

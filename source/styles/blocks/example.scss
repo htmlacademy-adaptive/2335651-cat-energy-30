@@ -1,0 +1,38 @@
+.example {
+  background-color: $basic-grey;
+}
+
+.example__title {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.example__comment {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-grey-light;
+}
+
+.example__item {
+  &--secondary {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+.example__number {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.example__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: lowercase;
+  color: $dark-grey-light;
+}

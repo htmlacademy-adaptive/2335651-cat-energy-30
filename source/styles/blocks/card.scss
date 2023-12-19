@@ -1,0 +1,19 @@
+.card {
+  background-color: $basic-grey;
+}
+
+.card__link-title {
+  color: $dark-grey;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.card__content {
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey-light;
+}
+
+.card__button {
+  @include button;
+}

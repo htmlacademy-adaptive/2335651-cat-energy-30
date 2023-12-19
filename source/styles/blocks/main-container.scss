@@ -1,0 +1,22 @@
+.main-container__title {
+  @include hero-title;
+}
+
+.main-container__slogan {
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-container__background {
+  background-color: $basic-green-light;
+}
+
+.main-container__subtitle {
+  line-height: 30px;
+}
+
+.main-container__botton {
+  @include button;
+  width: 244px;
+  min-height: 54px;
+}

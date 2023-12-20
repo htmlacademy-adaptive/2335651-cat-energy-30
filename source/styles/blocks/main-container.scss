@@ -9,6 +9,14 @@
 
 .main-container__background {
   background-color: $basic-green-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-green-light;
+  }
 }
 
 .main-container__subtitle {

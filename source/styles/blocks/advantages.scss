@@ -14,13 +14,29 @@
   background-color: $basic-green;
   width: 60px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
+  }
+
+  &--1 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-1");
+  }
+
+  &--2 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-2");
+  }
+
+  &--3 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-3");
+  }
+
+  &--4 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-4");
   }
 }
 

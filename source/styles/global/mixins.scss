@@ -34,3 +34,17 @@
   text-transform: uppercase;
   color: $dark-grey-light;
 }
+
+@mixin footer-icon {
+  fill: $basic-brown;
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 30%;
+  }
+}

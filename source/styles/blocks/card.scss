@@ -1,19 +1,46 @@
 .card {
   background-color: $basic-grey;
+
+  &--more {
+    background-color: $basic-white;
+    border: 2px solid $basic-grey;
+  }
 }
 
 .card__link-title {
   color: $dark-grey;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__content {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card__button {
   @include button;
+
+  &--more {
+    background-color: $basic-grey;
+    color: $dark-grey-light;
+
+    &:hover,
+    &:active {
+      background-color: $special-grey-light;
+      color: $dark-grey-light;
+    }
+  }
 }

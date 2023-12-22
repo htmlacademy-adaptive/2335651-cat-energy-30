@@ -1,17 +1,33 @@
 .add-products__title {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .add-products__item-title {
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .add-products__content {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .add-products__info {
@@ -22,6 +38,10 @@
   line-height: 20px;
   width: 280px;
   min-height: 290px;
+  background-image: url("../../images/icons/stack.svg#icon_gift");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
 
   @media (min-width: $tablet-width) {
     width: 708px;

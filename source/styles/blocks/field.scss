@@ -1,3 +1,9 @@
 .field__label {
   @include label;
 }
+
+.field__input {
+  height: 45px;
+
+  @include input;
+}

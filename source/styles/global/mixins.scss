@@ -30,6 +30,7 @@
 @mixin hero-title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -40,6 +41,7 @@
 @mixin secondary-title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -87,7 +89,6 @@
 
   &:active {
     fill: $basic-green;
-    opacity: 30%;
   }
 }
 

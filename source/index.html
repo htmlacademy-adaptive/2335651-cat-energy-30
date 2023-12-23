@@ -13,44 +13,50 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <picture>
-          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-          <img class="main-header__image" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--dekcskop site-list__link--current" href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--dekcskop" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--dekcskop" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+      <div class="main-header__nav">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+            <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
+          </picture>
+        </a>
+
+        <nav class="main-nav">
+          <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--dekcskop site-list__link--current" href="#">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--dekcskop" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--dekcskop" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main-header__content">
+        <div class="main-header__text">
+          <h1 class="main-header__title">Функциональное питание для котов</h1>
+          <p class="main-header__slogan">Занялся собой? Займись котом!</p>
+          <a class="main-header__botton" href="form.html">Подобрать программу</a>
         </div>
-      </nav>
+        <div class="main-header__picture">
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+            <img class="main-header__image" src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
+          </picture>
+        </div>
+      </div>
     </header>
 
     <main class="main-container">
-      <div class="main-container__content">
-        <h1 class="main-container__title">Функциональное питание для котов</h1>
-        <p class="main-container__slogan">Занялся собой? Займись котом!</p>
-        <a class="main-container__botton" href="form.html">Подобрать программу</a>
-      </div>
-      <div class="main-container__background">
-        <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
-          <img src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
-        </picture>
-      </div>
 
       <section class="programs">
         <div class="programs__wrapper">

@@ -6,4 +6,21 @@
   height: 45px;
 
   @include input;
+
+  &--icon {
+    background-position-y: 50%;
+    background-position-x: calc(100% - 13px);
+  }
+
+  &--email {
+    background-image: url("../../images/icons/stack.svg#icon-email");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    background-image: url("../../images/icons/stack.svg#icon-phone");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
 }

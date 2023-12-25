@@ -1,12 +1,27 @@
 .hero {
+  @media (min-width: $tablet-width) {
+    min-height: 875px;
+    padding: 0 90px;
+    padding-top: 65px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    min-height: 580px;
+    padding: 0 110px;
+    padding-top: 110px;
+    max-width: 1440px;
   }
 }
 
 .hero__title {
   color: $basic-white;
   text-align: center;
+  margin: 0;
 
   @include hero-title;
 
@@ -16,6 +31,7 @@
     color: $basic-black;
     max-width: 430px;
     text-align: left;
+    margin-bottom: 40px;
   }
 }
 
@@ -31,11 +47,27 @@
     line-height: 20px;
     color: $basic-black;
     text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
 .hero__image {
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+    top: 266px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    left: 557px;
+  }
 }
 
 .hero__subtitle {

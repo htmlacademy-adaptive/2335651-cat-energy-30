@@ -6,7 +6,8 @@
   line-height: 26px;
   color: $basic-black;
   background-color: $basic-white;
-  margin: 0;
+  margin: 0 auto;
+  max-width: $desktop-width;
 }
 
 .visually-hidden {

@@ -95,26 +95,20 @@
 }
 
 .add-products__text {
-  font-family: "Lato", sans-serif;
+  font-family: $secondary-font;
   color: $basic-white;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin: 0;
-  margin-top: 143px;
+  margin: 0 auto;
+  padding-top: 143px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-top: 28px;
     text-align: left;
     width: 170px;
     margin-left: auto;
     margin-right: 48px;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 142px;
   }
 }
 

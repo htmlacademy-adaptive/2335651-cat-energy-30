@@ -1,11 +1,20 @@
+.main-header {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 25px;
+    min-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    padding-top: 55px;
+    min-height: 59px;
+  }
+}
+
 .main-header__nav {
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-.main-nav__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}

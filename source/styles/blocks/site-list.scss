@@ -1,6 +1,33 @@
 .site-list {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 550px;
+
+    &--desktop a {
+      color: $basic-white;
+    }
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 59px;
   }
 }
 

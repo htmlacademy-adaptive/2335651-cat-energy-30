@@ -5,6 +5,7 @@
 @import "global/global.scss";
 
 /* BLOCKS */
+@import "blocks/main-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/main-container.scss";
 @import "blocks/programs.scss";
@@ -12,7 +13,11 @@
 @import "blocks/example.scss";
 @import "blocks/address.scss";
 @import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 @import "blocks/card.scss";
 @import "blocks/add-product.scss";
 @import "blocks/form.scss";
 @import "blocks/field.scss";
+@import "blocks/radio.scss";
+@import "blocks/checkbox.scss";

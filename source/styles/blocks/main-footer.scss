@@ -1,3 +1,16 @@
 .main-footer {
   background-color: $basic-grey;
 }
+
+.main-footer__image {
+  fill: $basic-black;
+
+  &:hover,
+  &:focus {
+    fill: $special-grey-dark;
+  }
+
+  &:active {
+    fill: $brown-light;
+  }
+}

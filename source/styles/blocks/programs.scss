@@ -3,13 +3,70 @@
 }
 
 .programs__title {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 37px;
   text-transform: uppercase;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__description {
-  font-family: $secondary-font;
+  @include content;
+}
+
+.programs__link {
+  color: $basic-black;
+  text-transform: uppercase;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs__icon {
+  background-color: $basic-green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.programs__image--slim {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.programs__image--pro {
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+  }
 }

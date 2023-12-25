@@ -1,11 +1,45 @@
 .advantages__title {
-  font-size: 60px;
-  line-height: 60px;
+  @include secondary-title;
 }
 
 .advantages__content {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 24px;
-  color: $dark-grey-light;
+  @include content;
+}
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__icon {
+  background-color: $basic-green;
+  width: 60px;
+  height: 60px;
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &--1 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-1");
+  }
+
+  &--2 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-2");
+  }
+
+  &--3 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-3");
+  }
+
+  &--4 {
+    background-image: url("../../images/icons/stack.svg#advantages-icon-4");
+  }
+}
+
+.advantages__image {
+  fill: $basic-white;
 }

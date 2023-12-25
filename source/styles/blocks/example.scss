@@ -3,36 +3,47 @@
 }
 
 .example__title {
-  font-size: 60px;
-  line-height: 60px;
+  @include secondary-title;
 }
 
 .example__comment {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 24px;
-  color: $dark-grey-light;
+  @include content;
 }
 
 .example__item {
   &--secondary {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #000000;
+    color: $basic-black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 
 .example__number {
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
   font-family: $secondary-font;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   text-transform: lowercase;
   color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

@@ -16,14 +16,136 @@
   text-align: center;
   display: block;
   border: none;
+
+  &:hover {
+    background-color: $basic-green-dark;
+  }
+
+  &:active {
+    background-color: $basic-green-dark;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin hero-title {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@mixin secondary-title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 @mixin subtitle {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@mixin content {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@mixin footer-icon {
+  fill: $basic-brown;
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+  }
+}
+
+@mixin input {
+  border: $basic-border;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $dark-grey-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+  }
+}
+
+@mixin background-index {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url("../../images/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../images/index-background@1x.jpg");
+    }
+  }
+}
+
+@mixin background-catalog {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url("../../images/catalog-bacground-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/catalog-bacground-tablet@1x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../images/catalog-bacground-desktop@1x.jpg");
+    }
+  }
 }

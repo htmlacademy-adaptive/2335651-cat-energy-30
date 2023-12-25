@@ -1,0 +1,17 @@
+.main-footer__copyright-link {
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.copyright__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey-light;
+}
+
+.copyright__icon {
+  @include footer-icon;
+}
+

@@ -1,13 +1,7 @@
-.form__title {
-  @include subtitle;
-}
-
-.form__note {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 16px;
-}
-
 .form__button {
   @include button;
+}
+
+.form__filter {
+  border: $basic-border;
 }

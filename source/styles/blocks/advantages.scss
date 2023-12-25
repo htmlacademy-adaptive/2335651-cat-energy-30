@@ -8,6 +8,13 @@
 
 .advantages__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__icon {

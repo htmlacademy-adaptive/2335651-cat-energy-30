@@ -1,0 +1,73 @@
+.hero {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.hero__title {
+  color: $basic-white;
+  text-align: center;
+
+  @include hero-title;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    max-width: 430px;
+    text-align: left;
+  }
+}
+
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-align: left;
+  }
+}
+
+.hero__image {
+  position: absolute;
+}
+
+.hero__subtitle {
+  @include subtitle;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.hero__botton {
+  @include button;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  min-height: 54px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.hero__icon {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}

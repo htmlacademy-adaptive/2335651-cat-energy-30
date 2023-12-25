@@ -1,5 +1,16 @@
+.programs__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .programs__item {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__title {

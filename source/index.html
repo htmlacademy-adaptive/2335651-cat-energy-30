@@ -12,49 +12,52 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__nav">
-        <a class="main-header__logo" href="#">
-          <picture>
-            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-            <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-            <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
-          </picture>
-        </a>
+    <div class="page__wrapper">
+      <header class="main-header">
+          <div class="main-header__nav">
+            <a class="main-header__logo" href="#">
+              <picture>
+                <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+                <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+                <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
+              </picture>
+            </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--dekcskop site-list__link--current" href="#">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--dekcskop" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--dekcskop" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
+            <nav class="main-nav">
+              <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list site-list--index">
+                  <li class="site-list__item">
+                    <a class="site-list__link site-list__link--current" href="#">Главная</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Подбор программы</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-        </nav>
-      </div>
-
-      <div class="main-header__content">
-        <div class="main-header__text">
-          <h1 class="main-header__title">Функциональное питание для котов</h1>
-          <p class="main-header__slogan">Занялся собой? Займись котом!</p>
-          <a class="main-header__botton" href="form.html">Подобрать программу</a>
         </div>
-        <div class="main-header__picture">
+      </header>
+
+      <div class="hero">
+        <div class="hero__text">
+          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          <a class="hero__botton" href="form.html">Подобрать программу</a>
+        </div>
+        <div class="hero__picture">
           <picture>
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
             <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
-            <img class="main-header__image" src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
+            <img class="hero__image" src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
           </picture>
         </div>
       </div>
-    </header>
+    </div>
 
     <main class="main-container">
 
@@ -65,7 +68,7 @@
             <li class="programs__item">
               <div class="programs__icon">
                 <svg class="programs__image programs__image--slim" width="36" height="50">
-                  <use href="../../images/icons/stack.svg#icon-slim"></use>
+                  <use href="./images/icons/stack.svg#icon-slim"></use>
                 </svg>
               </div>
               <h3 class="programs__title">Похудение</h3>
@@ -79,7 +82,7 @@
             <li class="programs__item">
               <div class="programs__icon">
                 <svg class="programs__image programs__image--pro" width="67" height="28">
-                  <use href="../../images/icons/stack.svg#icon-pro"></use>
+                  <use href="./images/icons/stack.svg#icon-pro"></use>
                 </svg>
               </div>
               <h3 class="programs__title">Набор массы</h3>
@@ -195,7 +198,7 @@
         <a class="main-footer__logo" href="index.html">
           <span class="visually-hidden">Логотип Кэт энерджи</span>
           <svg class="main-footer__image" width="128" height="24">
-            <use href="../../images/icons/stack.svg#logo-footer"></use>
+            <use href="./images/icons/stack.svg#logo-footer"></use>
           </svg>
         </a>
 
@@ -204,7 +207,7 @@
             <a class="social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="../../images/icons/stack.svg#vk"></use>
+                <use href="./images/icons/stack.svg#vk"></use>
               </svg>
             </a>
           </li>
@@ -212,7 +215,7 @@
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютюб</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="../../images/icons/stack.svg#youtube"></use>
+                <use href="./images/icons/stack.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -220,7 +223,7 @@
             <a class="social__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="../../images/icons/stack.svg#telegram"></use>
+                <use href="./images/icons/stack.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -229,7 +232,7 @@
         <a class="main-footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34">
-            <use href="../../images/icons/stack.svg#html-academy"></use>
+            <use href="./images/icons/stack.svg#html-academy"></use>
           </svg>
         </a>
       </div>

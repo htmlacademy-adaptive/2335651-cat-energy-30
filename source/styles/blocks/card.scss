@@ -1,5 +1,18 @@
 .card {
-  background-color: $basic-grey;
+  background-color: $basic-white;
+  border: 2px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 430px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 430px;
+    background-color: $basic-grey;
+  }
 
   &--more {
     background-color: $basic-white;

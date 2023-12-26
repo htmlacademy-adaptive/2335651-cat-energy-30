@@ -1,3 +1,13 @@
+.programs__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .programs__list {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -7,26 +17,72 @@
 
 .programs__item {
   background-color: $basic-grey;
+  min-height: 266px;
+  margin-bottom: 20px;
+  padding: 21px 20px;
+  display: grid;
+  grid-template-areas: "icon title""text text""link link";
+  grid-template-columns: 50px auto;
+  grid-template-rows: 53px auto auto;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    margin-bottom: 30px;
+    padding: 77px 53px;
+    padding-right: 63px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 340px auto;
+    grid-template-rows: 36px auto auto;
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    padding: 41px 52px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 170px auto;
+    grid-template-rows: 100px auto auto;
+    align-items: center;
   }
 }
 
 .programs__title {
+  margin: 0;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+  grid-area: title;
+  margin-left: 20px;
+  margin-top: 9px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    grid-row: 1;
   }
 }
 
 .programs__description {
   @include content;
+  margin: 0;
+  grid-area: text;
+  width: 227px;
+  margin-top: 22px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    margin-top: 39px;
+  }
 }
 
 .programs__link {
@@ -34,10 +90,16 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
+  grid-area: link;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    grid-row: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
   }
 }
 
@@ -46,38 +108,56 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  grid-area: icon;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
+    grid-column: 2;
+    margin-top: 15px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
-    height: 106px;
+    height: 100px;
   }
 }
 
 .programs__image--slim {
+  margin-left: 7px;
+  margin-top: -3px;
+
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
+    margin-left: 30px;
+    margin-top: -11px;
   }
 
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
+    margin-left: 15px;
+    margin-top: -6px;
   }
 }
 
 .programs__image--pro {
+  margin-left: -8px;
+  margin-top: 11px;
+
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
+    margin-left: -34px;
+    margin-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
+    margin-left: -19px;
+    margin-top: 20px;
   }
 }

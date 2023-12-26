@@ -1,4 +1,7 @@
 .main-nav {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
   margin-left: auto;
 }
 

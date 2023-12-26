@@ -1,14 +1,14 @@
 .main-header {
-  padding: 13px 20px;
+  padding: 13px $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 $main-padding-tablet;
     padding-top: 25px;
     min-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 $main-padding-desktop;
     padding-top: 55px;
     min-height: 59px;
   }

@@ -109,3 +109,14 @@
   }
 }
 
+@mixin main-padding {
+  padding: 0 $main-padding-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 $main-padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $main-padding-desktop;
+  }
+}

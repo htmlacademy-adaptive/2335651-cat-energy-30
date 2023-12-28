@@ -1,4 +1,12 @@
 .site-list {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 65px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +23,16 @@
 }
 
 .site-list__item {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-height: 66px;
+    background-color: $basic-white;
+    border-top: 1px solid $special-grey-light;
+    text-align: center;
+    padding: 23px 20px;
+    box-sizing: border-box;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -32,6 +50,7 @@
 }
 
 .site-list__link {
+  font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;

@@ -1,8 +1,8 @@
-.programs__wrapper {
-  @include main-padding;
-}
-
 .programs__list {
+  @media (min-width: $tablet-width) {
+    padding: $main-padding-tablet;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,12 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    grid-row: 1;
+    grid-column: 1;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
   }
 }
 
@@ -81,7 +86,7 @@
   margin-top: 22px;
   margin-bottom: 38px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 340px;
     margin-top: 24px;
     margin-bottom: 48px;

@@ -3,7 +3,7 @@
   padding: 13px $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
-    padding: 0 $main-padding-tablet;
+    padding: $main-padding-tablet;
     padding-top: 25px;
     min-height: 50px;
   }

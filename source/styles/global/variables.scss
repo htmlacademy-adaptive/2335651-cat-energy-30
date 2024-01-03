@@ -14,6 +14,7 @@ $special-grey-input: #e7e7e7;
 $special-grey: #cdcdcd;
 $special-grey-light: #ebebeb;
 $special-grey-dark: #3e3e3e;
+$grey-border: #d9d9d9;
 $dark-grey-light: #444444;
 $dark-grey: #222222;
 $basic-brown: #666666;
@@ -30,6 +31,6 @@ $desktop-width: 1440px;
 $basic-border: 2px solid $basic-grey;
 
 // Паддинги
-$main-padding-mobile: 20px;
-$main-padding-tablet: 30px;
-$main-padding-desktop: 110px;
+$main-padding-mobile: 0 20px;
+$main-padding-tablet: 0 30px;
+$main-padding-desktop: 0 110px;

@@ -24,7 +24,7 @@
 .example__content {
   @media (min-width: $desktop-width) {
     background-color: $basic-grey;
-    padding: $main-padding-desktop;
+    padding-left: 110px;
     padding-top: 70px;
     padding-bottom: 75px;
     position: relative;
@@ -36,9 +36,12 @@
   @include secondary-title;
   margin: 0;
   margin-bottom: 40px;
+  padding: $main-padding-mobile;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+    padding: $main-padding-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,7 +125,8 @@
       text-align: right;
       row-gap: 9px;
       justify-content: center;
-      width: 162px;
+      align-items: end;
+      min-width: 174px;
       min-height: 77px;
     }
 

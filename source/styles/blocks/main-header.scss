@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 $main-padding-desktop;
+    padding: $main-padding-desktop;
     padding-top: 55px;
     min-height: 59px;
   }

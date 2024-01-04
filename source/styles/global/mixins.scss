@@ -10,6 +10,7 @@
 
 @mixin button {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   background-color: #68b738;
   color: #ffffff;
   text-transform: uppercase;
@@ -94,8 +95,6 @@
 }
 
 @mixin input {
-  border: $basic-border;
-
   &:hover {
     border-color: $special-grey;
   }

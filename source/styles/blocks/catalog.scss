@@ -1,8 +1,16 @@
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: $main-padding-tablet;
+  }
+}
+
 .catalog__list {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px auto;
-    grid-column-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 141px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {

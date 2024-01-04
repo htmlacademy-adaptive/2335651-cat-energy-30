@@ -97,9 +97,12 @@
   line-height: 20px;
   width: 100%;
   min-height: 40px;
+  padding: 10px 0;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     margin-top: 302px;
+    padding: 14px 0;
   }
 
   @media (min-width: $tablet-width) {

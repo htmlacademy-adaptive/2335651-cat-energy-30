@@ -1,11 +1,24 @@
 .card {
   background-color: $basic-white;
-  border: 2px solid $basic-grey;
+  border-bottom: 1px solid $special-grey-light;
+  padding: $main-padding-mobile;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 140px auto;
+  grid-template-rows: 41px auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     min-height: 430px;
     background-color: $basic-grey;
+    border: none;
+    padding: 0 37px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,35 +29,125 @@
 
   &--more {
     background-color: $basic-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 78px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 160px;
+      padding-bottom: 40px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $grey-plus;
+      top: 39px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $grey-plus;
+      transform: rotate(90deg);
+      top: 39px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
+
+    &::before {
+      width: 60px;
+      top: 80px;
+    }
+
+    &::after {
+      width: 60px;
+      top: 80px;
+    }
+  }
+}
+
+.card__title {
+  margin: 0;
+  max-width: 76px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 134px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
 .card__link-title {
+  display: block;
   color: $dark-grey;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 }
 
 .card__content {
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey-light;
+  grid-column: 2;
+  margin-top: 14px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 32px;
+  }
+
+  &--more {
+    margin-top: 8px;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      margin-top: 23px;
+      margin-bottom: 82px;
+      max-width: 170px;
+    }
+  }
+
+  & tr {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid $special-grey;
+      padding-bottom: 5px;
+      margin-bottom: 7px;
+    }
   }
 }
 
 .card__button {
   @include button;
+  grid-column: 1/3;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
 
   &--more {
     background-color: $basic-grey;
@@ -56,4 +159,19 @@
       color: $dark-grey-light;
     }
   }
+}
+
+.card__image {
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -71px;
+    margin-bottom: 41px;
+  }
+}
+
+.card__link-image {
+  display: flex;
+  justify-content: center;
 }

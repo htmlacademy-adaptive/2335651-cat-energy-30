@@ -1,7 +1,34 @@
+.form__list {
+  @include main-padding;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  &--filter {
+    padding-top: 22px;
+    padding-bottom: 19px;
+  }
+}
+
 .form__button {
   @include button;
 }
 
 .form__filter {
-  border: 1px solid $special-grey-input;
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-top: 19px;
+  padding-bottom: 26px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-border;
+    left: 0;
+  }
 }

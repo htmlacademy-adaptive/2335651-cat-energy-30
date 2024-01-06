@@ -3,7 +3,6 @@
   @include main-padding;
   margin: 0;
   border-top: 1px solid $grey-border;
-  border-bottom: 1px solid $special-grey-light;
   padding-top: 27px;
   padding-bottom: 41px;
   margin-top: -40px;
@@ -14,6 +13,10 @@
     border: none;
     margin-top: 65px;
     margin-bottom: 165px;
+  }
+
+  &--form {
+    padding-bottom: 37px;
   }
 }
 
@@ -42,6 +45,9 @@
 
 .main-container__subtitle {
   @include subtitle;
+  padding: $main-padding-mobile;
+  margin: 0;
+  max-width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

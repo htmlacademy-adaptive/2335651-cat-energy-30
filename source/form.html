@@ -42,16 +42,16 @@
     </header>
 
     <main class="main-container">
-      <h1 class="main-container__title">Подбор программы</h1>
+      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
       <p class="main-container__subtitle">
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
 
-      <section class="survey">
-        <div class="survey__wrapper">
+      <section class="form-container">
+        <div class="form-container__wrapper">
           <h2 class="visually-hidden">Анкета для подбора программы</h2>
-          <form class="survey__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form-container__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__group-data">
               <ul class="form__list">
                 <li class="form__item field">
@@ -70,7 +70,7 @@
 
               <fieldset class="form__filter">
                 <legend class="visually-hidden">Выбор программы</legend>
-                <ul class="form__list">
+                <ul class="form__list form__list--filter">
                   <li class="form__item">
                     <label class="form__control radio">
                       <input class="radio__input visually-hidden" type="radio" name="program" value="program-slim" checked>

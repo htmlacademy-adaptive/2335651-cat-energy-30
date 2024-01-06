@@ -1,9 +1,16 @@
+.field {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+}
+
 .field__label {
   @include label;
 }
 
 .field__input {
   height: 45px;
+  width: 100%;
 
   @include input;
 

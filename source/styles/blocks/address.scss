@@ -1,6 +1,9 @@
 .address {
+  background-color: $basic-grey;
+
   @media (min-width: $tablet-width) {
     padding: $main-padding-tablet;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,7 +13,7 @@
 
 .address__wrapper {
   display: flex;
-  padding: 20px 26px;
+  padding: 26px 20px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
@@ -48,6 +51,11 @@
 .address__content {
   @include content;
   max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 157px;
+    text-align: right;
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 157px;

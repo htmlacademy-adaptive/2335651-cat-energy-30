@@ -18,6 +18,11 @@
   flex-direction: column;
   row-gap: 14px;
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    padding-bottom: 65px;
+  }
 }
 
 .form__list {
@@ -29,7 +34,6 @@
   @media (min-width: $tablet-width) {
     row-gap: 20px;
     padding: 0 40px;
-    padding-bottom: 72px;
   }
 
   &--filter {
@@ -38,6 +42,16 @@
     @media (min-width: $tablet-width) {
       border: 1px solid $special-grey-input;
       padding: 23px 27px 27px;
+    }
+  }
+
+  &--add {
+    margin-top: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 57px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -62,6 +76,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
+    padding-bottom: 65px;
+    padding-top: 72px;
 
     &::before,
     &::after {
@@ -70,15 +86,34 @@
   }
 }
 
+.form__email {
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+  }
+}
+
 .form__title {
   font-size: 24px;
   line-height: 26px;
   max-width: 187px;
-  margin-bottom: 36px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 600px;
+  }
 }
 
 .form__comments {
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    padding-bottom: 65px;
+  }
 
   & textarea {
     font-family: $primary-font;
@@ -91,20 +126,44 @@
     resize: none;
     padding: 14px 15px;
     box-sizing: border-box;
+    margin-top: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 76px;
+      min-height: 175px;
+    }
   }
 }
 
 .form__add {
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    padding-bottom: 52px;
+  }
 }
 
 .form__buttons {
   padding: $main-padding-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    display: flex;
+    column-gap: 60px;
+  }
 }
 
 .form__button {
   @include button;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 284px;
+    min-height: 54px;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
 
 .form__note {
@@ -114,4 +173,8 @@
   text-align: center;
   margin: 0;
   margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

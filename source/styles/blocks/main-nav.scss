@@ -1,0 +1,56 @@
+.main-nav {
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    &--closed .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $basic-black;
+      box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+    }
+
+    &--closed .site-list {
+      display: none;
+    }
+
+    &--opened .main-nav__toggle {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        background-color: $basic-black;
+      }
+
+      &::before {
+        transform: (rotate(45deg));
+      }
+
+      &::after {
+        transform: (rotate(-45deg));
+      }
+    }
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  display: block;
+  height: 38px;
+  width: 24px;
+  background-color: $basic-white;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  top: -42px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

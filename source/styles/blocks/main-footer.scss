@@ -2,6 +2,23 @@
   background-color: $basic-grey;
 }
 
+.main-footer__wrapper {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
+}
+
 .main-footer__image {
   fill: $basic-black;
 
@@ -12,5 +29,15 @@
 
   &:active {
     fill: $brown-light;
+  }
+}
+
+.main-footer__logo {
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $grey-border;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 }

@@ -1,0 +1,24 @@
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: $main-padding-tablet;
+    padding-top: 165px;
+  }
+}
+
+.catalog__list {
+  border-top: 1px solid $grey-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 141px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

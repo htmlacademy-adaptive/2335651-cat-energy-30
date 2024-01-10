@@ -1,4 +1,16 @@
-.main-footer__copyright-link {
+.copyright {
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+  }
+
   &:active {
     opacity: 30%;
   }

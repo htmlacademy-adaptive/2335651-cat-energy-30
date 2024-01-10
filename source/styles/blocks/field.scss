@@ -1,19 +1,39 @@
+.field {
+  display: flex;
+  column-gap: 13px;
+  row-gap: 14px;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
+}
+
 .field__label {
   @include label;
+  display: block ruby;
 }
 
 .field__input {
   height: 45px;
+  width: 100%;
+  border: 1px solid $special-grey-input;
 
   @include input;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
 
   &--icon {
     background-position-y: 50%;
     background-position-x: calc(100% - 13px);
+    background-repeat: no-repeat;
+    border-color: $special-grey;
   }
 
   &--email {
-    background-image: url("../../images/icons/stack.svg#icon-email");
+    background: url("../../images/icons/stack.svg#icon-email");
     background-size: 20px 20px;
     background-repeat: no-repeat;
   }
@@ -21,6 +41,6 @@
   &--phone {
     background-image: url("../../images/icons/stack.svg#icon-phone");
     background-size: 20px 20px;
-    background-repeat: no-repeat;
   }
 }
+

@@ -1,7 +1,7 @@
 /* здесь используйте глобальные переменные */
 // Шрифты
-$primary-font: "Oswald", sans-serif;
-$secondary-font: "Lato", sans-serif;
+$primary-font: "Oswald", "arial", sans-serif;
+$secondary-font: "Lato", "arial", sans-serif;
 
 // Цвета
 $basic-white: #ffffff;
@@ -14,6 +14,8 @@ $special-grey-input: #e7e7e7;
 $special-grey: #cdcdcd;
 $special-grey-light: #ebebeb;
 $special-grey-dark: #3e3e3e;
+$grey-border: #d9d9d9;
+$grey-plus: #d3d3d3;
 $dark-grey-light: #444444;
 $dark-grey: #222222;
 $basic-brown: #666666;
@@ -22,9 +24,10 @@ $error-pink: #ff8282;
 
 
 // Размеры вьюпортов
-$tablet-width: 768px;
-$desktop-width: 1440px;
+$tablet-width: 767px;
+$desktop-width: 1439px;
 
-
-// Бордеры
-$basic-border: 2px solid $basic-grey;
+// Паддинги
+$main-padding-mobile: 0 20px;
+$main-padding-tablet: 0 30px;
+$main-padding-desktop: 0 110px;

@@ -111,6 +111,7 @@
   font-size: 16px;
   line-height: 16px;
   grid-area: link;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -120,6 +121,67 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: $basic-black;
+    top: 50%;
+    left: 102px;
+    transition: 0.2s;
+
+    @media (min-width: $tablet-width) {
+      left: 129px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 7px solid $basic-black;
+    border-bottom: 5px solid transparent;
+    top: 4px;
+    left: 119px;
+    transition: 0.2s;
+
+    @media (min-width: $tablet-width) {
+      left: 146px;
+      top: 11px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      width: 26px;
+    }
+
+    &::after {
+      left: 128px;
+
+      @media (min-width: $tablet-width) {
+        left: 155px;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.6;
+      transition: none;
+    }
+
+    &::after {
+      opacity: 0.6;
+      transition: none;
+    }
   }
 }
 

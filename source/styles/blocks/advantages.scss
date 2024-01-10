@@ -1,6 +1,10 @@
 .advantages {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .advantages__wrapper {
@@ -52,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     column-gap: 94px;
+    justify-content: space-between;
   }
 }
 

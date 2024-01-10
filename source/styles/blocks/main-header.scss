@@ -15,6 +15,16 @@
   }
 }
 
+.main-header__icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-header__nav {
   @media (min-width: $tablet-width) {
     display: flex;

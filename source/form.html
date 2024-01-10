@@ -22,18 +22,18 @@
           </picture>
         </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--dekcskop site-list__link--current" href="#">Главная</a>
+                <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--dekcskop" href="catalog.html">Каталог продукции</a>
+                <a class="site-list__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--dekcskop" href="form.html">Подбор программы</a>
+                <a class="site-list__link site-list__link--current" href="#">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -42,16 +42,16 @@
     </header>
 
     <main class="main-container">
-      <h1 class="main-container__title">Подбор программы</h1>
+      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
       <p class="main-container__subtitle">
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
 
-      <section class="survey">
-        <div class="survey__wrapper">
+      <section class="form-container">
+        <div class="form-container__wrapper">
           <h2 class="visually-hidden">Анкета для подбора программы</h2>
-          <form class="survey__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form-container__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__group-data">
               <ul class="form__list">
                 <li class="form__item field">
@@ -70,7 +70,7 @@
 
               <fieldset class="form__filter">
                 <legend class="visually-hidden">Выбор программы</legend>
-                <ul class="form__list">
+                <ul class="form__list form__list--filter">
                   <li class="form__item">
                     <label class="form__control radio">
                       <input class="radio__input visually-hidden" type="radio" name="program" value="program-slim" checked>
@@ -95,14 +95,14 @@
 
             <fieldset class="form__group-contacts">
               <legend class="form__title">Контактные данные (владельца кота)</legend>
-              <p class="form__email field">
+              <div class="form__email field">
                 <label class="field__label" for="newsletter-email">E-mail:*</label>
                 <input class="field__input field__input--icon field__input--email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" id="newsletter-email" required>
-              </p>
-              <p class="form__phone field">
+              </div>
+              <div class="form__phone field">
                 <label class="field__label" for="appointment-phone">Телефон:*</label>
                 <input class="field__input field__input--icon field__input--phone" type="text" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90" required>
-              </p>
+              </div>
             </fieldset>
 
             <fieldset class="form__comments">
@@ -113,7 +113,7 @@
 
             <fieldset class="form__add">
               <legend class="form__title">Дополнительно</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--add">
                 <li class="form__item">
                   <label class="form__control checkbox">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
@@ -171,7 +171,7 @@
         <a class="main-footer__logo" href="index.html">
           <span class="visually-hidden">Логотип Кэт энерджи</span>
           <svg class="main-footer__image" width="128" height="24">
-            <use href="../../images/icons/stack.svg#logo-footer"></use>
+            <use href="./images/icons/stack.svg#logo-footer"></use>
           </svg>
         </a>
 
@@ -180,7 +180,7 @@
             <a class="social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="../../images/icons/stack.svg#vk"></use>
+                <use href="./images/icons/stack.svg#vk"></use>
               </svg>
             </a>
           </li>
@@ -188,7 +188,7 @@
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютюб</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="../../images/icons/stack.svg#youtube"></use>
+                <use href="./images/icons/stack.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -196,7 +196,7 @@
             <a class="social__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="../../images/icons/stack.svg#telegram"></use>
+                <use href="./images/icons/stack.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -205,7 +205,7 @@
         <a class="main-footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34">
-            <use href="../../images/icons/stack.svg#html-academy"></use>
+            <use href="./images/icons/stack.svg#html-academy"></use>
           </svg>
         </a>
       </div>

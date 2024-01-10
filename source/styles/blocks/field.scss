@@ -3,6 +3,10 @@
   column-gap: 13px;
   row-gap: 14px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
 }
 
 .field__label {
@@ -16,6 +20,10 @@
   border: 1px solid $special-grey-input;
 
   @include input;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
 
   &--icon {
     background-position-y: 50%;

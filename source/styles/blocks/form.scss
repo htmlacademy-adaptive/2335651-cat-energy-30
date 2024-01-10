@@ -11,6 +11,23 @@
     padding-top: 66px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
+}
+
+.form__group-data {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: $main-padding-desktop;
+    padding-bottom: 70px;
+  }
 }
 
 .form__group-contacts {
@@ -20,8 +37,17 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 70px;
     padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    column-gap: 81px;
+    padding-bottom: 70px;
   }
 }
 
@@ -33,7 +59,11 @@
 
   @media (min-width: $tablet-width) {
     row-gap: 20px;
-    padding: 0 40px;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 
   &--filter {
@@ -42,6 +72,13 @@
     @media (min-width: $tablet-width) {
       border: 1px solid $special-grey-input;
       padding: 23px 27px 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 570px;
+      min-height: 196px;
+      padding: 25px 28px;
+      box-sizing: border-box;
     }
   }
 
@@ -52,6 +89,15 @@
       margin-top: 57px;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 95px;
+      padding-bottom: 65px;
     }
   }
 }
@@ -75,8 +121,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
-    padding-bottom: 65px;
+    padding: 0 70px;
     padding-top: 72px;
 
     &::before,
@@ -84,12 +129,20 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .form__email {
   margin-top: 26px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 76px;
   }
 }
@@ -111,8 +164,13 @@
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 70px;
     padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
+    padding-bottom: 70px;
   }
 
   & textarea {
@@ -132,6 +190,10 @@
       margin-top: 76px;
       min-height: 175px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 78px;
+    }
   }
 }
 
@@ -139,8 +201,12 @@
   padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 70px;
     padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
   }
 }
 
@@ -148,21 +214,31 @@
   padding: $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 70px;
     display: flex;
     column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
+    column-gap: 80px;
   }
 }
 
 .form__button {
   @include button;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 284px;
     min-height: 54px;
     font-size: 20px;
-    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
+    width: 570px;
   }
 }
 

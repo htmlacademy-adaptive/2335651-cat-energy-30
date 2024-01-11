@@ -185,38 +185,9 @@
   display: flex;
   position: relative;
   padding-top: 60px;
-  width: 100%;
+  width: 280px;
   min-height: 256px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 4px;
-    height: 256px;
-    background-color: $basic-brown;
-    border-radius: 2px;
-    z-index: 2;
-    left: calc(50% - 2px);
-    cursor: pointer;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    mask-image: url("../../images/icons/stack.svg#switch");
-    z-index: 3;
-    background-color: $basic-white;
-    border-radius: 50%;
-    left: calc(50% - 20px);
-    top: 50%;
-    cursor: pointer;
-
-    &:hover {
-      fill: $basic-green;
-    }
-  }
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -246,4 +217,62 @@
   & img {
     max-width: none;
   }
+}
+
+.example__button {
+  position: relative;
+  top: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    background-color: $basic-brown;
+    border-radius: 2px;
+    left: calc(50% - 2px);
+    top: -100px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: calc(50% - 19px);
+    z-index: 2;
+    top: 1px;
+    background-color: $basic-white;
+  }
+
+  &:hover {
+    &::before,
+    .example__button-image {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    &::before,
+    .example__button-image {
+      background-color: #9dcd83;
+    }
+  }
+}
+
+.example__button-image {
+  position: absolute;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  mask-image: url("../../images/icons/stack.svg#switch");
+  z-index: 3;
+  background-color: $basic-brown;
+  border-radius: 50%;
+  left: calc(50% - 20px);
+  cursor: pointer;
+  border: none;
 }

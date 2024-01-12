@@ -14,11 +14,27 @@
 
 .add-products__wrapper {
   @include main-padding;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     column-gap: 80px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+    left: 0;
+    top: -43px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: -93px;
+    }
   }
 }
 
@@ -29,19 +45,20 @@
   margin: 0;
   padding: $main-padding-mobile;
   padding-bottom: 36px;
+  max-width: 226px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: $main-padding-tablet;
-    padding-bottom: 80px;
+    margin-left: 40px;
+    padding: 0 40px;
+    margin-bottom: 80px;
+    max-width: 339px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: $main-padding-desktop;
-    padding-bottom: 80px;
+    margin-left: 70px;
   }
 }
 

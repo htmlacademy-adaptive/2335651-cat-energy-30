@@ -101,6 +101,12 @@
     line-height: 24px;
     text-align: center;
   }
+
+  &--more {
+    @media (max-width: $tablet-width) {
+      display: block ruby;
+    }
+  }
 }
 
 .card__content {

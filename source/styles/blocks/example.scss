@@ -3,6 +3,11 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
   }
 }
 

@@ -25,6 +25,26 @@
     height: 52px;
   }
 
+  &[type="number"]::-moz-placeholder {
+    color: #000000;
+  }
+
+  &[type="number"]::-webkit-input-placeholder {
+    color: #000000;
+  }
+
+  &[type="number"]:-ms-input-placeholder {
+    color: #000000;
+  }
+
+  &[type="number"]::-ms-input-placeholder {
+    color: #000000;
+  }
+
+  &[type="number"]::placeholder {
+    color: #000000;
+  }
+
   &--icon {
     background-position-y: 50%;
     background-position-x: calc(100% - 13px);

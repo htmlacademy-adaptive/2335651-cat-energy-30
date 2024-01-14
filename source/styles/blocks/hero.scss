@@ -23,6 +23,12 @@
   }
 }
 
+.hero__text {
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
 .hero__title {
   color: $basic-white;
   text-align: center;

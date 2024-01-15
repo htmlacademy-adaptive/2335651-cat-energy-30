@@ -14,6 +14,9 @@
 .example__wrapper {
   @include main-padding;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -37,6 +40,7 @@
     padding-top: 70px;
     padding-bottom: 155px;
     width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -213,13 +217,11 @@
   padding-top: 60px;
   width: 280px;
   min-height: 256px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 101px;
-    left: 104px;
     padding-top: 104px;
-    margin: 0;
+    width: 560px;
   }
 
   @media (min-width: $desktop-width) {
@@ -243,7 +245,7 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, $basic-white 151px, $grey-light 151px 100%);
-    width: 100%;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {

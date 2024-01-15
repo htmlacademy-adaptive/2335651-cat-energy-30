@@ -3,23 +3,24 @@
   padding: $main-padding-mobile;
   padding-top: 27px;
   position: relative;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
 
   @media (min-width: $tablet-width) {
     min-height: 875px;
     padding: 0 90px;
     padding-top: 65px;
     box-sizing: border-box;
-    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     min-height: 580px;
     padding: $main-padding-desktop;
     padding-top: 110px;
     max-width: 1440px;
     margin: 0;
+    justify-content: space-between;
   }
 }
 
@@ -72,12 +73,11 @@
   }
 }
 
-.hero__image {
+.hero__picture {
   position: absolute;
   top: 167px;
 
   @media (min-width: $tablet-width) {
-    left: 30px;
     top: 266px;
     z-index: -1;
   }

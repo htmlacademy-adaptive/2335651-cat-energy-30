@@ -14,10 +14,22 @@
   display: block ruby;
 }
 
+.field__container-input {
+  width: 100%;
+}
+
 .field__input {
   height: 45px;
   width: 100%;
   border: 1px solid $special-grey-input;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  opacity: none;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-grey-light;
+  text-transform: uppercase;
 
   @include input;
 
@@ -25,31 +37,8 @@
     height: 52px;
   }
 
-  &[type="number"]::-moz-placeholder {
-    color: #000000;
-  }
-
-  &[type="number"]::-webkit-input-placeholder {
-    color: #000000;
-  }
-
-  &[type="number"]:-ms-input-placeholder {
-    color: #000000;
-  }
-
-  &[type="number"]::-ms-input-placeholder {
-    color: #000000;
-  }
-
-  &[type="number"]::placeholder {
-    color: #000000;
-  }
-
-  &--icon {
-    background-position-y: 50%;
-    background-position-x: calc(100% - 13px);
-    background-repeat: no-repeat;
-    border-color: $special-grey;
+  &::placeholder {
+    opacity: 1;
   }
 
   &--email {
@@ -61,6 +50,13 @@
   &--phone {
     background-image: url("../../images/icons/stack.svg#icon-phone");
     background-size: 20px 20px;
+  }
+
+  &--icon {
+    background-position-y: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-color: $special-grey;
   }
 }
 

@@ -84,6 +84,7 @@
 
   &--add {
     margin-top: 34px;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       margin-top: 57px;
@@ -100,6 +101,10 @@
       padding-bottom: 65px;
     }
   }
+}
+
+.form__item {
+  min-height: 30px;
 }
 
 .form__filter {
@@ -178,6 +183,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    color: $dark-grey-light;
+    opacity: 1;
     width: 100%;
     min-height: 150px;
     border: 1px solid $special-grey-input;

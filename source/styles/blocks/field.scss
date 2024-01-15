@@ -11,7 +11,7 @@
 
 .field__label {
   @include label;
-  display: block ruby;
+  white-space: nowrap;
 }
 
 .field__container-input {

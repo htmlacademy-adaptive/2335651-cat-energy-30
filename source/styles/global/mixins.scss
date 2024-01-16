@@ -119,3 +119,20 @@
     padding: $main-padding-desktop;
   }
 }
+
+@mixin green-line {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $basic-green;
+    top: calc(100% + 15px);
+    z-index: -1;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: calc(100% + 23px);
+    }
+  }
+}

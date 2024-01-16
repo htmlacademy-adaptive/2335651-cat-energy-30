@@ -87,5 +87,13 @@
       left: 50%;
       transform: translate(-50%);
     }
+
+    &:hover:not(.site-list__link--current) {
+      opacity: 0.6;
+    }
+
+    &:active:not(.site-list__link--current) {
+      opacity: 0.3;
+    }
   }
 }

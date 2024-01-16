@@ -97,14 +97,14 @@
               <legend class="form__title">Контактные данные (владельца кота)</legend>
               <div class="form__email field">
                 <label class="field__label" for="newsletter-email">E-mail:*</label>
-                <div class="field__container-input">
-                  <input class="field__input field__input--icon field__input--email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" id="newsletter-email" required>
+                <div class="field__container-input  field__container-input--icon field__container-input--email">
+                  <input class="field__input" type="text" name="e-mail" placeholder="кuklachev@gmail.com" id="newsletter-email" required>
                 </div>
               </div>
               <div class="form__phone field">
                 <label class="field__label" for="appointment-phone">Телефон:*</label>
-                <div class="field__container-input">
-                  <input class="field__input field__input--icon field__input--phone" type="text" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90" required>
+                <div class="field__container-input  field__container-input--icon field__container-input--phone">
+                  <input class="field__input" type="text" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90" required>
                 </div>
               </div>
             </fieldset>
@@ -112,7 +112,9 @@
             <fieldset class="form__comments">
               <legend class="form__title">Комментарий</legend>
               <label class="visually-hidden" for="comment">Комментарий</label>
-              <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <div class="form__textarea">
+                <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </fieldset>
 
             <fieldset class="form__add">
@@ -166,6 +168,14 @@
               Санкт-Петербург
             </p>
           </div>
+        </div>
+        <div class="address__map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="address__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург.">
+          </picture>
         </div>
       </section>
     </main>

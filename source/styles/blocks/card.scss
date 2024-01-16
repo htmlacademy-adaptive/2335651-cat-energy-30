@@ -12,32 +12,36 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     min-height: 430px;
-    background-color: $basic-grey;
     border: none;
     padding: 0 37px;
     padding-bottom: 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, $basic-white 81px, $basic-grey 81px 100%);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 430px;
-    background-color: $basic-grey;
   }
 
   &--more {
+    height: 429px;
+    background: none;
     background-color: $basic-white;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     padding-top: 78px;
+    border: 2px solid $basic-grey;
+    margin-top: 82px;
 
     @media (min-width: $tablet-width) {
       padding-top: 160px;
       padding-bottom: 40px;
+      background-color: $basic-white;
     }
 
     & h3 {
@@ -62,19 +66,17 @@
       transform: rotate(90deg);
       top: 39px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    border: 2px solid $basic-grey;
+    @media (min-width: $tablet-width) {
+      &::before {
+        width: 60px;
+        top: 80px;
+      }
 
-    &::before {
-      width: 60px;
-      top: 80px;
-    }
-
-    &::after {
-      width: 60px;
-      top: 80px;
+      &::after {
+        width: 60px;
+        top: 80px;
+      }
     }
   }
 }
@@ -168,14 +170,16 @@
 .card__image {
   margin: 0 auto;
   display: block;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -71px;
-    margin-bottom: 41px;
-  }
 }
 
 .card__link-image {
   display: flex;
   justify-content: center;
+  min-height: 107px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 198px;
+    margin-bottom: 19px;
+  }
 }

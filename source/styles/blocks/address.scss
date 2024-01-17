@@ -14,6 +14,7 @@
 .address__wrapper {
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
+    background-color: transparent;
     padding-bottom: 106px;
     padding-top: 95px;
 
@@ -24,19 +25,27 @@
 .address__info {
   display: flex;
   padding: 26px 20px;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
+    column-gap: 308px;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
     min-height: 199px;
-    background-color: $basic-white;
     align-items: center;
     padding: 60px 80px;
     box-sizing: border-box;
+    column-gap: 87px;
+  }
+
+  &--background {
+    @media (max-width: $desktop-width) {
+      background-color: $basic-grey;
+    }
   }
 }
 
@@ -90,5 +99,6 @@
     top: 0;
     width: 100%;
     z-index: -1;
+    height: 400px;
   }
 }

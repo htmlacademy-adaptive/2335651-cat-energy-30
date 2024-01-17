@@ -156,6 +156,7 @@
 
 .form__email {
   margin-top: 26px;
+  padding: $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
     margin-top: 76px;

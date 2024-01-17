@@ -9,9 +9,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: $main-padding-desktop;
-    padding-top: 55px;
     min-height: 59px;
+
+    @media (min-width: $desktop-width) {
+      padding: 55px 110px;
+      max-width: 2000px;
+      min-width: 1220px;
+
+      @include center;
+    }
   }
 }
 
@@ -28,6 +34,10 @@
 .main-header__nav {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 

@@ -18,6 +18,10 @@
     margin-top: 65px;
   }
 
+  @media (min-width: $desktop-width) {
+    @include center;
+  }
+
   &--form {
     padding-bottom: 37px;
 

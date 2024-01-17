@@ -7,6 +7,10 @@
 
 .programs__wrapper {
   @include main-padding;
+
+  @media (min-width: $desktop-width) {
+    @include center;
+  }
 }
 
 .programs__list {

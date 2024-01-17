@@ -59,4 +59,10 @@
 
 .page__wrapper {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    @include center;
+  }
 }

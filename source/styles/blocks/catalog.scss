@@ -3,6 +3,11 @@
     padding: $main-padding-tablet;
     padding-top: 84px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
+    padding-top: 84px;
+  }
 }
 
 .catalog__list {
@@ -10,15 +15,17 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     column-gap: 60px;
     row-gap: 141px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  & > * {
+    min-width: 0;
   }
 }

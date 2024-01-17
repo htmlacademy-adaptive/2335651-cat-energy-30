@@ -43,13 +43,11 @@
   @media (min-width: $tablet-width) {
     counter-reset: my-counter;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 94px;
   }
 }

@@ -3,7 +3,6 @@
   padding-bottom: 32px;
 
   & fieldset {
-    margin: 0;
     border: none;
   }
 
@@ -17,10 +16,24 @@
   }
 }
 
-.form__group-data {
+.form__group-wrapper {
   position: relative;
 
   @include green-line;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 24px;
+    }
+  }
+
+  &::before {
+    top: 18px;
+  }
+}
+
+.form__group-data {
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
@@ -31,6 +44,8 @@
     justify-content: space-between;
     padding: $main-padding-desktop;
     padding-bottom: 70px;
+
+    @include center;
   }
 }
 
@@ -41,8 +56,6 @@
   row-gap: 14px;
   padding-bottom: 24px;
   position: relative;
-
-  @include green-line;
 
   @media (min-width: $tablet-width) {
     padding: $main-padding-tablet;
@@ -56,6 +69,8 @@
     align-items: end;
     column-gap: 81px;
     padding-bottom: 70px;
+
+    @include center;
   }
 }
 
@@ -186,6 +201,10 @@
     padding: 0 40px;
     padding-left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
 }
 
 .form__comments {
@@ -193,8 +212,6 @@
   padding-bottom: 23px;
   margin-top: 24px;
   position: relative;
-
-  @include green-line;
 
   @media (min-width: $tablet-width) {
     padding: $main-padding-tablet;
@@ -204,6 +221,8 @@
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
     padding-bottom: 70px;
+
+    @include center;
   }
 }
 
@@ -218,6 +237,8 @@
 
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
+
+    @include center;
   }
 }
 
@@ -233,6 +254,8 @@
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
     column-gap: 80px;
+
+    @include center;
   }
 }
 

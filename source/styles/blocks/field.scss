@@ -1,6 +1,6 @@
 .field {
   display: flex;
-  column-gap: 13px;
+  column-gap: 14px;
   row-gap: 14px;
   align-items: center;
 
@@ -50,8 +50,7 @@
   border: 1px solid $basic-grey;
   text-transform: uppercase;
   width: 100%;
-  padding: 14px 15px;
-  box-sizing: border-box;
+  padding: 10px 15px;
   background-color: transparent;
   outline: none;
 

@@ -70,6 +70,7 @@
 .address__content {
   @include content;
   max-width: 140px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 157px;

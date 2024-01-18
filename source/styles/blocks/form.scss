@@ -56,6 +56,7 @@
   row-gap: 14px;
   padding-bottom: 24px;
   position: relative;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: $main-padding-tablet;
@@ -215,6 +216,7 @@
 .form__comments {
   padding: 0;
   padding-bottom: 23px;
+  margin: 0;
   margin-top: 24px;
   position: relative;
 
@@ -234,6 +236,7 @@
 .form__add {
   padding: 0;
   padding-bottom: 34px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;

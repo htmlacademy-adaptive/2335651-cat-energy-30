@@ -14,7 +14,7 @@
 
 .example__wrapper {
   @include main-padding;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,10 +48,11 @@
 
 .example__title {
   @include secondary-title;
+
   margin: 0;
-  margin-bottom: 40px;
   padding: $main-padding-mobile;
   padding-top: 25px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -68,6 +69,7 @@
 
 .example__comment {
   @include content;
+  margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -139,7 +141,7 @@
       line-height: 20px;
       display: flex;
       position: absolute;
-      top: 70px;
+      top: 67px;
       width: 100%;
       flex-direction: row-reverse;
       column-gap: 3px;
@@ -218,7 +220,7 @@
 .example__images {
   display: flex;
   position: relative;
-  padding-top: 60px;
+  padding-top: 55px;
   width: 280px;
   min-height: 256px;
 
@@ -277,7 +279,7 @@
 
 .example__button {
   position: relative;
-  top: 100px;
+  top: 108px;
 
   &::before {
     content: "";
@@ -287,7 +289,7 @@
     background-color: $basic-brown;
     border-radius: 2px;
     left: calc(50% - 2px);
-    top: -100px;
+    top: -108px;
     cursor: pointer;
     z-index: 1;
 

@@ -82,6 +82,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 3px;
 
     &--desktop::after {
       content: "";

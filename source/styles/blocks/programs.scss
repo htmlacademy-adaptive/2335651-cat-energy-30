@@ -1,6 +1,6 @@
 .programs {
   @media (min-width: $desktop-width) {
-    padding-top: 82px;
+    padding-top: 78px;
     padding-bottom: 71px;
   }
 }
@@ -36,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 170px auto;
+    grid-template-columns: 160px auto;
     grid-template-rows: 100px auto auto;
     align-items: center;
   }
@@ -45,21 +45,21 @@
 .programs__item {
   background-color: $basic-grey;
   padding: 21px 20px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    margin-bottom: 30px;
     padding: 77px 53px;
     padding-right: 63px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     width: 570px;
-    padding: 41px 52px;
+    padding: 46px 52px;
     box-sizing: border-box;
     align-items: center;
   }
@@ -116,6 +116,7 @@
   line-height: 16px;
   grid-area: link;
   position: relative;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -125,6 +126,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
+    margin-top: 4px;
   }
 
   &::before {
@@ -195,6 +197,7 @@
   height: 50px;
   border-radius: 50%;
   grid-area: icon;
+  margin-top: 4px;
 
   @media (min-width: $tablet-width) {
     width: 200px;

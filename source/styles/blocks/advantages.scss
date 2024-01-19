@@ -14,7 +14,7 @@
 
 .advantages__wrapper {
   @include main-padding;
-  padding-bottom: 49px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
@@ -97,6 +97,7 @@
 
   &:last-child {
     margin-bottom: 0;
+    align-items: start;
   }
 }
 

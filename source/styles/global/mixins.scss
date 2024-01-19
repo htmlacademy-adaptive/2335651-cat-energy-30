@@ -94,20 +94,6 @@
   }
 }
 
-@mixin input {
-  &:hover {
-    border-color: $special-grey;
-  }
-
-  &:focus {
-    border-color: $dark-grey-light;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 52px;
-  }
-}
-
 @mixin main-padding {
   padding: $main-padding-mobile;
 

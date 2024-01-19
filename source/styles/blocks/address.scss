@@ -60,6 +60,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    max-width: 163px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +76,10 @@
   @media (min-width: $tablet-width) {
     max-width: 157px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

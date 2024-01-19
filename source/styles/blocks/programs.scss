@@ -51,9 +51,11 @@
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    padding: 77px 53px;
+    padding: 77px 52px;
     padding-right: 63px;
+    padding-bottom: 53px;
     box-sizing: border-box;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +124,7 @@
     font-size: 20px;
     line-height: 30px;
     grid-row: 3;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +143,8 @@
     transition: 0.2s;
 
     @media (min-width: $tablet-width) {
-      left: 129px;
+      left: 133px;
+      top: 14px;
     }
   }
 
@@ -157,8 +161,8 @@
     transition: 0.2s;
 
     @media (min-width: $tablet-width) {
-      left: 146px;
-      top: 11px;
+      left: 150px;
+      top: 10px;
     }
   }
 

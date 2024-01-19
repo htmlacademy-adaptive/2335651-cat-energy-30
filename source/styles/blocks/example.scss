@@ -20,7 +20,12 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $basic-white 455px, $grey-light 455px 100%);
     padding: 0;
+  }
+
+  @media (min-width: 868px) {
+    background: linear-gradient(to bottom, $basic-white 431.5px, $grey-light 431.5px 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -95,15 +100,7 @@
     position: relative;
     padding: $main-padding-tablet;
     margin-bottom: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 462px;
-      background-color: $grey-light;
-      top: 332px;
-    }
+    column-gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +125,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
-    min-height: 72px;
+    height: 72px;
   }
 
   &--secondary {
@@ -161,10 +158,11 @@
       flex-direction: column-reverse;
       text-align: right;
       row-gap: 9px;
-      justify-content: center;
+      justify-content: start;
       align-items: end;
       min-width: 174px;
       min-height: 77px;
+      padding-top: 11px;
     }
 
     @media (min-width: $desktop-width) {
@@ -207,7 +205,7 @@
     line-height: 14px;
     background-color: $basic-white;
     padding: 0 9px;
-    top: 66px;
+    top: 62px;
     min-width: fit-content;
   }
 
@@ -225,8 +223,8 @@
   min-height: 256px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 101px;
-    padding-top: 104px;
+    padding-bottom: 97px;
+    padding-top: 100px;
     width: 560px;
   }
 
@@ -295,6 +293,7 @@
 
     @media (min-width: $tablet-width) {
       height: 512px;
+      top: -86px;
     }
   }
 
@@ -326,6 +325,10 @@
     .example__button-image {
       background-color: #9dcd83;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 85px;
   }
 }
 

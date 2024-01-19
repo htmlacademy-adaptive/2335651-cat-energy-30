@@ -17,7 +17,8 @@
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 47px;
+    padding-bottom: 45px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +49,9 @@
   @media (min-width: $tablet-width) {
     counter-reset: my-counter;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 230px auto;
+    column-gap: 153px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +75,8 @@
     padding-top: 40px;
     box-sizing: border-box;
     position: relative;
+    margin-bottom: 0;
+    grid-template-rows: 110px auto;
 
     &::before {
       position: absolute;
@@ -80,7 +85,7 @@
       color: $basic-grey;
       font-size: 280px;
       line-height: 280px;
-      right: 0;
+      left: 115px;
       z-index: -1;
     }
   }

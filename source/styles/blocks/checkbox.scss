@@ -8,14 +8,16 @@
     content: "";
     position: absolute;
     background-image: url("../../images/icons/stack.svg#check");
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 14px;
     left: 8px;
     top: 11px;
 
     @media (min-width: $tablet-width) {
       left: 7px;
       top: 3px;
+      width: 26px;
+      height: 26px;
     }
   }
 }

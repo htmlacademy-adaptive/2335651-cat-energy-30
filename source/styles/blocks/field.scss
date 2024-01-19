@@ -18,7 +18,6 @@
 .field__container-input {
   width: 100%;
   height: 45px;
-  padding-right: 31px;
 
   &--email {
     &::after {
@@ -54,10 +53,6 @@
     mask-position: right 13px top 50%;
     border-color: $special-grey;
     position: relative;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
 

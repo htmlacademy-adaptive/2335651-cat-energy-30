@@ -1,9 +1,8 @@
 .field {
-  display: flex;
-  column-gap: 14px;
-  row-gap: 14px;
+  display: grid;
+  grid-template-columns: 1fr 13fr;
   align-items: center;
-  flex-wrap: wrap;
+  column-gap: 13px;
 
   @media (min-width: $desktop-width) {
     min-width: 570px;

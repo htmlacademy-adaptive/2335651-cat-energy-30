@@ -39,11 +39,6 @@
       border: 2px solid $basic-grey;
     }
 
-    & h3 {
-      max-width: 204px;
-      display: block ruby;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -79,6 +74,7 @@
     width: 280px;
     margin: 0 auto;
     grid-template-areas: "image title""image text";
+    grid-template-columns: 140px auto;
   }
 }
 
@@ -108,6 +104,15 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  &--more {
+    max-width: 204px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      max-width: 140px;
+    }
   }
 }
 
@@ -144,6 +149,7 @@
   & tr {
     display: flex;
     justify-content: space-between;
+    min-width: 140px;
 
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid $special-grey;

@@ -124,6 +124,15 @@
     margin-left: 90px;
     padding: 14px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 80px;
+    padding: 14px 0;
+  }
 }
 
 .hero__icon {

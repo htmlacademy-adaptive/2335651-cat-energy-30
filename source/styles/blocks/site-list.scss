@@ -11,7 +11,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 450px;
-    margin-right: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +68,10 @@
     left: 50%;
     transform: translate(-50%);
     top: 30px;
+
+    @media (min-width: $tablet-width) {
+      top: 32px;
+    }
   }
 
   &--current {
@@ -91,9 +94,9 @@
       height: 2px;
       width: 100%;
       background: $basic-white;
-      bottom: -1px;
       left: 50%;
       transform: translate(-50%);
+      top: 36px;
     }
   }
 

@@ -84,6 +84,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 157px;
+    text-align: left;
+    min-height: 79px;
   }
 
   & p {

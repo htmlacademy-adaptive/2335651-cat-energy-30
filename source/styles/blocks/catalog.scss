@@ -1,12 +1,12 @@
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     padding: $main-padding-tablet;
-    padding-top: 97px;
+    padding-top: 94px;
   }
 
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
-    padding-top: 84px;
+    padding-top: 97px;
 
     @include center;
   }
@@ -19,12 +19,14 @@
     border: none;
     display: grid;
     column-gap: 60px;
-    row-gap: 72px;
+    row-gap: 70px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 81px;
+    row-gap: 76px;
   }
 
   & > * {

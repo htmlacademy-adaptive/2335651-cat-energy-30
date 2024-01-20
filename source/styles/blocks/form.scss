@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 79px;
   }
 }
 
@@ -43,7 +43,8 @@
     display: flex;
     justify-content: space-between;
     padding: $main-padding-desktop;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
+    column-gap: 81px;
 
     @include center;
   }
@@ -104,7 +105,7 @@
     @media (min-width: $desktop-width) {
       min-width: 570px;
       min-height: 196px;
-      padding: 25px 28px;
+      padding: 30px 28px;
       box-sizing: border-box;
     }
   }
@@ -126,7 +127,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-right: 95px;
+      padding: 0;
       padding-bottom: 65px;
     }
   }
@@ -185,6 +186,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 76px;
+    margin-bottom: 0;
   }
 }
 
@@ -238,7 +240,7 @@
 
 .form__add {
   padding: 0;
-  padding-bottom: 34px;
+  padding-bottom: 33px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -264,7 +266,7 @@
 
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
-    column-gap: 80px;
+    column-gap: 77px;
 
     @include center;
   }
@@ -272,7 +274,7 @@
 
 .form__button {
   @include button;
-  padding: 10px 10px;
+  padding: 7px 10px;
   box-sizing: border-box;
   font-size: 16px;
   width: 100%;
@@ -342,5 +344,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 78px;
+    padding: 0;
   }
 }

@@ -18,11 +18,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
-    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     @include center;
+    padding-bottom: 71px;
   }
 }
 
@@ -56,7 +56,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
+    column-gap: 78px;
   }
 }
 

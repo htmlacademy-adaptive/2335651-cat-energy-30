@@ -36,6 +36,13 @@
       mask-image: url("../../images/icons/stack.svg#icon-email");
       mask-size: 20px 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        top: 16px;
+        right: 16px;
+      }
+    }
   }
 
   &--phone {
@@ -50,6 +57,13 @@
       background-color: $basic-black;
       mask-image: url("../../images/icons/stack.svg#icon-phone");
       mask-size: 20px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        top: 16px;
+        right: 16px;
+      }
     }
   }
 

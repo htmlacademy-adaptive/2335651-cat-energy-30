@@ -189,6 +189,7 @@
     color: $dark-grey-light;
 
     &:hover,
+    &:focus,
     &:active {
       background-color: $special-grey-light;
       color: $dark-grey-light;

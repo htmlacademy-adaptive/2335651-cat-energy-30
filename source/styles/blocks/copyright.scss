@@ -15,6 +15,14 @@
   &:active {
     opacity: 30%;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .copyright__icon {
+    fill: $basic-green;
+  }
 }
 
 .copyright__text {

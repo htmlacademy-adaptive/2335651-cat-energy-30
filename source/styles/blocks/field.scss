@@ -27,6 +27,7 @@
     &::after {
       content: "";
       position: absolute;
+      display: block;
       width: 20px;
       height: 20px;
       top: 13px;
@@ -83,13 +84,12 @@
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey-light;
-  border: 1px solid $basic-grey;
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
   padding: 10px 15px;
   background-color: transparent;
-  outline: none;
+  border: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -105,11 +105,12 @@
     border-color: $special-grey;
   }
 
-  &:focus:invalid {
-    border-color: $error-pink;
+  &:focus .field__container-input--email::after {
+    background-color: $basic-green;
   }
 
   &:focus {
-    outline: $dark-grey-light;
+    border: 2px solid $dark-grey-light;
+    outline: none;
   }
 }

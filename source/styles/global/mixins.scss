@@ -19,8 +19,10 @@
   border: none;
   min-height: 40px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-green-dark;
+    outline: none;
   }
 
   &:active {
@@ -84,8 +86,7 @@
 @mixin footer-icon {
   fill: $basic-brown;
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $basic-green;
   }
 

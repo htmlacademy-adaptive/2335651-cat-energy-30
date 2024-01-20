@@ -18,6 +18,14 @@
   }
 }
 
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:focus .social__icon {
+  fill: $basic-green;
+}
+
 .social__icon {
   @include footer-icon;
 }

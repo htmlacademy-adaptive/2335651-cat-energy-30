@@ -25,8 +25,7 @@
 .main-footer__image {
   fill: $basic-black;
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $special-grey-dark;
   }
 
@@ -42,5 +41,13 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .main-footer__image {
+    fill: $special-grey-dark;
   }
 }

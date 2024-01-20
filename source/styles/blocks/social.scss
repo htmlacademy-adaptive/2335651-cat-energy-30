@@ -1,6 +1,8 @@
 .social {
+  display: flex;
+  flex-wrap: wrap;
+
   @media (max-width: $tablet-width) {
-    display: flex;
     border-bottom: 1px solid $grey-border;
     width: 100%;
     padding: 17px 0;

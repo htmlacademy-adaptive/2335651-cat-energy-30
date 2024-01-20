@@ -112,8 +112,9 @@
   line-height: 20px;
   width: 100%;
   min-height: 40px;
-  padding: 10px 0;
+  padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 244px;

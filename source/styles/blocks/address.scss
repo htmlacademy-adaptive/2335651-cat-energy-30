@@ -98,15 +98,14 @@
   border: none;
   display: block;
   width: 100%;
-}
-
-.address__map {
   height: 362px;
 
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
 
+.address__map {
   @media (min-width: $desktop-width) {
     margin-top: -100px;
   }

@@ -11,10 +11,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    min-width: 132px;
-    justify-content: space-between;
-    margin-left: 39px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
   }
 }
 

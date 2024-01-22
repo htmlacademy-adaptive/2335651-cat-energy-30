@@ -1,7 +1,6 @@
 .programs {
   @media (min-width: $desktop-width) {
     padding-top: 78px;
-    padding-bottom: 71px;
 
     @include center;
   }
@@ -14,6 +13,7 @@
 .programs__list {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -60,7 +60,7 @@
     padding: 46px 52px;
     box-sizing: border-box;
     align-items: center;
-    margin: 0;
+    margin-bottom: 71px;
   }
 }
 

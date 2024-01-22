@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     display: grid;
+    align-items: start;
     column-gap: 60px;
     row-gap: 70px;
     grid-template-columns: repeat(2, 1fr);

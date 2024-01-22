@@ -42,6 +42,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     padding: $main-padding-desktop;
     padding-bottom: 69px;
     column-gap: 81px;
@@ -111,11 +112,9 @@
   }
 
   &--add {
-    margin-top: 34px;
     padding: $main-padding-mobile;
 
     @media (min-width: $tablet-width) {
-      margin-top: 62px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 0 40px;
@@ -124,9 +123,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 70px;
       padding: 0;
       padding-bottom: 65px;
     }
@@ -175,17 +174,14 @@
 }
 
 .form__email {
-  margin-top: 36px;
   padding: $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
-    margin-top: 76px;
     padding: 0 40px;
     margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 76px;
     margin-bottom: 0;
   }
 }
@@ -216,6 +212,34 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -40px;
+  }
+
+  &--contacts {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+    }
+  }
+
+  &--comments {
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 88px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
+    }
+  }
+
+  &--add {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 62px;
+    }
   }
 }
 
@@ -308,7 +332,6 @@
 
 .form__textarea {
   padding: $main-padding-mobile;
-  margin-top: 38px;
 
   & textarea {
     font-family: $primary-font;
@@ -342,12 +365,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 88px;
     padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 78px;
     padding: 0;
   }
 }

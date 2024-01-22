@@ -20,6 +20,11 @@
       height: 26px;
     }
   }
+
+  &:disabled ~ .checkbox__text {
+    opacity: 0.3;
+    cursor: default;
+  }
 }
 
 .checkbox__text {
@@ -44,5 +49,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+  }
+
+  &:hover::before {
+    border-color: $input-grey;
   }
 }

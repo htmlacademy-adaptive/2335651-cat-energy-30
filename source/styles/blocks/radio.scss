@@ -21,6 +21,15 @@
       top: 6px;
     }
   }
+
+  &:disabled ~ .radio__text {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &:hover ~ .radio__text::before {
+    border-color: $input-grey;
+  }
 }
 
 .radio__text {
@@ -48,3 +57,4 @@
     }
   }
 }
+

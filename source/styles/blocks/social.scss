@@ -1,19 +1,18 @@
 .social {
-  display: flex;
-  flex-wrap: wrap;
-
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $grey-border;
     width: 100%;
     padding: 17px 0;
+    column-gap: 26px;
+    display: flex;
     justify-content: center;
-    column-gap: 24px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $tablet-width) {
+    column-gap: 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 24px;
   }
 }
 

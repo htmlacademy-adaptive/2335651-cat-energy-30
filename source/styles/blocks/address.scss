@@ -97,6 +97,7 @@
 .address__image {
   border: none;
   display: block;
+  object-fit: cover;
   width: 100%;
   height: 362px;
 
@@ -105,8 +106,30 @@
   }
 }
 
+.address__picture {
+  object-fit: cover;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.address__image-nojs {
+  display: none;
+}
+
 .address__map {
   @media (min-width: $desktop-width) {
     margin-top: -100px;
+  }
+
+  &--nojs .address__image {
+    display: none;
+  }
+
+  &--nojs .address__image-nojs {
+    display: block;
   }
 }

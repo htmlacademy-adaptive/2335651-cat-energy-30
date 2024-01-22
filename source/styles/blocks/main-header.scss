@@ -1,6 +1,6 @@
 .main-header {
-  min-height: 38px;
-  padding: 13px 20px;
+  max-height: 65px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: $main-padding-tablet;
@@ -19,6 +19,18 @@
 
       @include center;
     }
+  }
+}
+
+.main-header__wrapper {
+  padding: 13px 20px 10px;
+}
+
+.main-header__logo {
+  @media (max-width: $desktop-width) {
+    min-height: 38px;
+    display: block;
+    max-width: 200px;
   }
 }
 
@@ -41,4 +53,3 @@
     justify-content: space-between;
   }
 }
-

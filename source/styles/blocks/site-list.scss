@@ -1,6 +1,9 @@
 .site-list {
   @media (max-width: $tablet-width) {
     width: 100%;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ebebeb;
   }
 
   @media (min-width: $tablet-width) {

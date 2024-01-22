@@ -9,6 +9,8 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: none;
+
+    @include center;
   }
 }
 
@@ -21,7 +23,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include center;
     padding-bottom: 71px;
   }
 }
@@ -49,14 +50,17 @@
   @media (min-width: $tablet-width) {
     counter-reset: my-counter;
     display: grid;
-    grid-template-columns: 230px auto;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 153px;
     row-gap: 37px;
+    margin: 0 auto;
+    max-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 78px;
+    max-width: 1220px;
   }
 }
 

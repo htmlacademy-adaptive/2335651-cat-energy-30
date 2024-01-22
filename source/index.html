@@ -16,8 +16,8 @@
           <div class="main-header__nav">
             <a class="main-header__logo" href="#">
               <picture>
-                <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-                <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+                <source width="202" height="59" type="image/svg+xml" media="(min-width: 1439px)" srcset="images/logo-desktop.svg">
+                <source width="174" height="50" type="image/svg+xml" media="(min-width: 767px)" srcset="images/logo-tablet.svg">
                 <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
               </picture>
             </a>
@@ -47,8 +47,8 @@
         </div>
         <div class="hero__picture">
           <picture>
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+            <source width="552" height="499" type="image/png" media="(min-width: 1439px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 767px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
             <img class="hero__image" src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
           </picture>
         </div>
@@ -165,15 +165,17 @@
               привычек и по-прежнему спит по 16 часов в день.
             </p>
             <dl class="example__list">
-              <div class="example__item">
-                <dt class="example__number">5 кг</dt>
-                <dd class="example__description">Cнижение веса</dd>
+              <div class="example__item-container">
+                <div class="example__item">
+                  <dt class="example__number">5 кг</dt>
+                  <dd class="example__description">Cнижение веса</dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__number">60 дней</dt>
+                  <dd class="example__description">Затрачено времени</dd>
+                </div>
               </div>
-              <div class="example__item">
-                <dt class="example__number">60 дней</dt>
-                <dd class="example__description">Затрачено времени</dd>
-              </div>
-              <div class="example__item example__item--secondary">
+              <div class="example__item-secondary">
                 <dt>15 000 руб.</dt>
                 <dd>Затраты на питание:</dd>
               </div>
@@ -181,22 +183,24 @@
           </div>
 
           <div class="example__images">
-            <div class="example__image-before">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
-                <img class="example__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
-              </picture>
-            </div>
-            <div class="example__image-after">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
-                <img class="example__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Худой кот">
-              </picture>
-            </div>
-            <div class="example__button">
-              <button class="example__button-image" type="button">
-                <span class="visually-hidden">Слайдер</span>
-              </button>
+            <div class="example__images-wrapper">
+              <div class="example__image-before">
+                <picture>
+                  <source width="560" height="512" type="image/png" media="(min-width: 767px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+                  <img class="example__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
+                </picture>
+              </div>
+              <div class="example__image-after">
+                <picture>
+                  <source width="560" height="512" type="image/png" media="(min-width: 767px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+                  <img class="example__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Худой кот">
+                </picture>
+              </div>
+              <div class="example__button">
+                <button class="example__button-image" type="button">
+                  <span class="visually-hidden">Слайдер</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

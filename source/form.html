@@ -12,19 +12,19 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__nav">
-        <a class="main-header__logo" href="#">
-          <picture>
-            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-            <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-            <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
-          </picture>
-        </a>
+    <div class="page__wrapper">
+      <header class="main-header">
+        <div class="main-header__nav">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
+            </picture>
+          </a>
 
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
@@ -36,17 +36,19 @@
                 <a class="site-list__link site-list__link--current" href="#">Подбор программы</a>
               </li>
             </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+          </nav>
+        </div>
+      </header>
+    </div>
 
     <main class="main-container">
-      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
-      <p class="main-container__subtitle">
-        Заполните анкету, и мы подберем
-        программу питания для вашего кота
-      </p>
+      <div class="main-container__title">
+        <h1 class="main-container__title-form">Подбор программы</h1>
+        <p class="main-container__subtitle">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+      </div>
 
       <section class="form-container">
         <div class="form-container__wrapper">
@@ -56,15 +58,21 @@
               <ul class="form__list">
                 <li class="form__item field">
                   <label class="field__label" for="appointment-name">Имя:*</label>
-                  <input class="field__input" type="text" id="appointment-name" name="appointment-name" placeholder="Барсик" required>
+                  <div class="field__container-input">
+                    <input class="field__input" type="text" id="appointment-name" name="appointment-name" placeholder="Барсик" required>
+                  </div>
                 </li>
                 <li class="form__item field">
                   <label class="field__label" for="appointment-weight">Вес (кг):*</label>
-                  <input class="field__input" type="number" id="appointment-weight" name="appointment-weight" placeholder="7" required>
+                  <div class="field__container-input">
+                    <input class="field__input" type="number" id="appointment-weight" name="appointment-weight" placeholder="7" required>
+                  </div>
                 </li>
                 <li class="form__item field">
                   <label class="field__label" for="appointment-age">Возраст (лет):</label>
-                  <input class="field__input" type="number" id="appointment-age" name="appointment-age" placeholder="7">
+                  <div class="field__container-input">
+                    <input class="field__input" type="number" id="appointment-age" name="appointment-age" placeholder="7">
+                  </div>
                 </li>
               </ul>
 
@@ -93,53 +101,65 @@
               </fieldset>
             </div>
 
-            <fieldset class="form__group-contacts">
-              <legend class="form__title">Контактные данные (владельца кота)</legend>
-              <div class="form__email field">
-                <label class="field__label" for="newsletter-email">E-mail:*</label>
-                <input class="field__input field__input--icon field__input--email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" id="newsletter-email" required>
-              </div>
-              <div class="form__phone field">
-                <label class="field__label" for="appointment-phone">Телефон:*</label>
-                <input class="field__input field__input--icon field__input--phone" type="text" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90" required>
-              </div>
-            </fieldset>
+            <div class="form__group-wrapper">
+              <fieldset class="form__group-contacts">
+                <legend class="form__title">Контактные данные (владельца кота)</legend>
+                <div class="form__email field">
+                  <label class="field__label" for="newsletter-email">E-mail:*</label>
+                  <div class="field__container-input  field__container-input--icon field__container-input--email">
+                    <input class="field__input" type="text" name="e-mail" placeholder="кuklachev@gmail.com" id="newsletter-email" required>
+                  </div>
+                </div>
+                <div class="form__phone field">
+                  <label class="field__label" for="appointment-phone">Телефон:*</label>
+                  <div class="field__container-input  field__container-input--icon field__container-input--phone">
+                    <input class="field__input" type="text" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90" required>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
 
-            <fieldset class="form__comments">
-              <legend class="form__title">Комментарий</legend>
-              <label class="visually-hidden" for="comment">Комментарий</label>
-              <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
+            <div class="form__group-wrapper">
+              <fieldset class="form__comments">
+                <legend class="form__title">Комментарий</legend>
+                <label class="visually-hidden" for="comment">Комментарий</label>
+                <div class="form__textarea">
+                  <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </div>
+              </fieldset>
+            </div>
 
-            <fieldset class="form__add">
-              <legend class="form__title">Дополнительно</legend>
-              <ul class="form__list form__list--add">
-                <li class="form__item">
-                  <label class="form__control checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
-                    <span class="checkbox__text">Сахарозаменитель</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__control checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="water">
-                    <span class="checkbox__text">Питьевая вода</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__control checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="milk">
-                    <span class="checkbox__text">Молоко</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__control checkbox">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins">
-                    <span class="checkbox__text">Витамины</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__group-wrapper">
+              <fieldset class="form__add">
+                <legend class="form__title">Дополнительно</legend>
+                <ul class="form__list form__list--add">
+                  <li class="form__item">
+                    <label class="form__control checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
+                      <span class="checkbox__text">Сахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__control checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="water">
+                      <span class="checkbox__text">Питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__control checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="milk">
+                      <span class="checkbox__text">Молоко</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__control checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins">
+                      <span class="checkbox__text">Витамины</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <div class="form__buttons">
               <button class="form__button" type="submit">Отправить заявку</button>
@@ -153,15 +173,23 @@
 
       <section class="address">
         <div class="address__wrapper">
-          <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <div class="address__content">
-            <p>
-              ул. Большая Конюшенная, д. 19/8
-            </p>
-            <p>
-              Санкт-Петербург
-            </p>
+          <div class="address__info address__info--background">
+            <h2 class="address__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
+            <div class="address__content">
+              <p>
+                ул. Большая Конюшенная, д. 19/8
+              </p>
+              <p>
+                Санкт-Петербург
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="address__map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe class="address__image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+          </iframe>
         </div>
       </section>
     </main>

@@ -1,3 +1,48 @@
+.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  &:checked + .checkbox__text::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/icons/stack.svg#check");
+    width: 18px;
+    height: 14px;
+    left: 8px;
+    top: 11px;
+
+    @media (min-width: $tablet-width) {
+      left: 7px;
+      top: 3px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
 .checkbox__text {
   @include label;
+  margin-left: 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-grey;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
 }

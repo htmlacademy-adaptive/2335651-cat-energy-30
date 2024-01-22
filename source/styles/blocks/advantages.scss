@@ -1,26 +1,29 @@
 .advantages {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+
+    @include center;
+  }
 }
 
 .advantages__wrapper {
   @include main-padding;
-}
-
-.advantages__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  column-gap: 20px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    width: 230px;
-    min-height: 280px;
-    align-items: start;
-    padding-top: 40px;
-    box-sizing: border-box;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 71px;
   }
 }
 
@@ -30,7 +33,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 }
 
@@ -45,19 +48,66 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    counter-reset: my-counter;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 153px;
+    row-gap: 37px;
+    margin: 0 auto;
+    max-width: 708px;
   }
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 78px;
+    max-width: 1220px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  column-gap: 20px;
+
   @media (min-width: $tablet-width) {
-    column-gap: 94px;
+    display: grid;
+    max-width: 249px;
+    min-height: 280px;
+    align-items: start;
+    padding-top: 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 0;
+    grid-template-rows: 110px auto;
+
+    &::before {
+      position: absolute;
+      content: counter(my-counter);
+      counter-increment: my-counter;
+      color: $basic-grey;
+      font-size: 280px;
+      line-height: 280px;
+      left: 115px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 250px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    align-items: start;
   }
 }
 
 .advantages__icon {
   background-color: $basic-green;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;

@@ -1,7 +1,9 @@
 .programs {
   @media (min-width: $desktop-width) {
-    padding-top: 82px;
+    padding-top: 78px;
     padding-bottom: 71px;
+
+    @include center;
   }
 }
 
@@ -20,8 +22,6 @@
   display: grid;
   grid-template-areas: "icon title""text text""link link";
   grid-template-columns: 50px auto;
-  grid-template-rows: 53px auto auto;
-
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -32,7 +32,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 170px auto;
+    grid-template-columns: 160px auto;
     grid-template-rows: 100px auto auto;
     align-items: center;
   }
@@ -41,23 +41,26 @@
 .programs__item {
   background-color: $basic-grey;
   padding: 21px 20px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    margin-bottom: 30px;
-    padding: 77px 53px;
+    padding: 77px 52px;
     padding-right: 63px;
+    padding-bottom: 53px;
     box-sizing: border-box;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     width: 570px;
-    padding: 41px 52px;
+    padding: 46px 52px;
     box-sizing: border-box;
     align-items: center;
+    margin: 0;
   }
 }
 
@@ -111,15 +114,83 @@
   font-size: 16px;
   line-height: 16px;
   grid-area: link;
+  position: relative;
+  margin-top: 4px;
+  max-width: 150px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     grid-row: 3;
+    margin: 0;
+    max-width: 180px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
+    margin-top: 4px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: $basic-black;
+    top: 50%;
+    left: 102px;
+    transition: 0.2s;
+
+    @media (min-width: $tablet-width) {
+      left: 133px;
+      top: 14px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 7px solid $basic-black;
+    border-bottom: 5px solid transparent;
+    top: 4px;
+    left: 119px;
+    transition: 0.2s;
+
+    @media (min-width: $tablet-width) {
+      left: 150px;
+      top: 10px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      width: 26px;
+    }
+
+    &::after {
+      left: 128px;
+
+      @media (min-width: $tablet-width) {
+        left: 155px;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.6;
+      transition: none;
+    }
+
+    &::after {
+      opacity: 0.6;
+      transition: none;
+    }
   }
 }
 
@@ -129,6 +200,7 @@
   height: 50px;
   border-radius: 50%;
   grid-area: icon;
+  margin-top: 4px;
 
   @media (min-width: $tablet-width) {
     width: 200px;

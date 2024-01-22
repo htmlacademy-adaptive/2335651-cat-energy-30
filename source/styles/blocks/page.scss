@@ -59,4 +59,8 @@
 
 .page__wrapper {
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    max-height: 65px;
+  }
 }

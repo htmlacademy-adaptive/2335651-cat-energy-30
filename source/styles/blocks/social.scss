@@ -1,9 +1,11 @@
 .social {
+  display: flex;
+  flex-wrap: wrap;
+
   @media (max-width: $tablet-width) {
-    display: flex;
     border-bottom: 1px solid $grey-border;
     width: 100%;
-    padding: 20px 0;
+    padding: 17px 0;
     justify-content: center;
     column-gap: 24px;
   }
@@ -12,7 +14,16 @@
     display: flex;
     min-width: 132px;
     justify-content: space-between;
+    margin-left: 39px;
   }
+}
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:focus .social__icon {
+  fill: $basic-green;
 }
 
 .social__icon {

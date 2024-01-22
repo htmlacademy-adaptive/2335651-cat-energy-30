@@ -1,9 +1,8 @@
 .form {
-  padding-top: 39px;
+  padding-top: 38px;
   padding-bottom: 32px;
 
   & fieldset {
-    margin: 0;
     border: none;
   }
 
@@ -13,11 +12,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 79px;
+  }
+}
+
+.form__group-wrapper {
+  position: relative;
+
+  @include green-line;
+
+  &::before {
+    top: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 22px;
+    }
   }
 }
 
 .form__group-data {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
   }
@@ -26,18 +43,24 @@
     display: flex;
     justify-content: space-between;
     padding: $main-padding-desktop;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
+    column-gap: 81px;
+
+    @include center;
   }
 }
 
 .form__group-contacts {
+  padding: 0;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
   padding-bottom: 24px;
+  position: relative;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: $main-padding-tablet;
     padding-bottom: 65px;
   }
 
@@ -48,6 +71,8 @@
     align-items: end;
     column-gap: 81px;
     padding-bottom: 70px;
+
+    @include center;
   }
 }
 
@@ -55,7 +80,7 @@
   @include main-padding;
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
+  row-gap: 13px;
 
   @media (min-width: $tablet-width) {
     row-gap: 20px;
@@ -64,41 +89,55 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    justify-content: space-between;
   }
 
   &--filter {
-    padding: 22px 19px 20px;
+    padding: 22px 19px 18px;
 
     @media (min-width: $tablet-width) {
       border: 1px solid $special-grey-input;
-      padding: 23px 27px 27px;
+      padding: 27px 27px 27px;
+      padding-bottom: 31px;
+      row-gap: 23px;
     }
 
     @media (min-width: $desktop-width) {
       min-width: 570px;
       min-height: 196px;
-      padding: 25px 28px;
+      padding: 30px 28px;
       box-sizing: border-box;
     }
   }
 
   &--add {
     margin-top: 34px;
+    padding: $main-padding-mobile;
 
     @media (min-width: $tablet-width) {
-      margin-top: 57px;
+      margin-top: 62px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding: 0;
+      padding: 0 40px;
+      row-gap: 42px;
+      column-gap: 60px;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-right: 95px;
+      padding: 0;
       padding-bottom: 65px;
     }
+  }
+}
+
+.form__item {
+  min-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 0;
   }
 }
 
@@ -106,7 +145,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  padding-top: 19px;
+  padding-top: 25px;
   padding-bottom: 26px;
   position: relative;
 
@@ -122,7 +161,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    padding-top: 72px;
+    padding-top: 74px;
 
     &::before,
     &::after {
@@ -136,14 +175,26 @@
 }
 
 .form__email {
-  margin-top: 26px;
+  margin-top: 36px;
+  padding: $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
     margin-top: 76px;
+    padding: 0 40px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 76px;
+    margin-bottom: 0;
+  }
+}
+
+.form__phone {
+  padding: $main-padding-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
   }
 }
 
@@ -152,61 +203,55 @@
   line-height: 26px;
   max-width: 187px;
   margin: 0;
+  background: $basic-white;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     max-width: 600px;
+    padding: 0 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
   }
 }
 
 .form__comments {
+  padding: 0;
   padding-bottom: 23px;
+  margin: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: $main-padding-tablet;
     padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
     padding-bottom: 70px;
-  }
 
-  & textarea {
-    font-family: $primary-font;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    width: 100%;
-    min-height: 150px;
-    border: 1px solid $special-grey-input;
-    resize: none;
-    padding: 14px 15px;
-    box-sizing: border-box;
-    margin-top: 38px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 76px;
-      min-height: 175px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 78px;
-    }
+    @include center;
   }
 }
 
 .form__add {
-  padding-bottom: 34px;
+  padding: 0;
+  padding-bottom: 33px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
-    padding-bottom: 52px;
+    padding: 0 30px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
+
+    @include center;
   }
 }
 
@@ -216,17 +261,22 @@
   @media (min-width: $tablet-width) {
     padding: 0 70px;
     display: flex;
-    column-gap: 60px;
+    column-gap: 57px;
   }
 
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
-    column-gap: 80px;
+    column-gap: 77px;
+
+    @include center;
   }
 }
 
 .form__button {
   @include button;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  font-size: 16px;
   width: 100%;
   cursor: pointer;
 
@@ -248,9 +298,56 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
-  margin-top: 21px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    margin-top: 16px;
+  }
+}
+
+.form__textarea {
+  padding: $main-padding-mobile;
+  margin-top: 38px;
+
+  & textarea {
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $dark-grey-light;
+    opacity: 1;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid $special-grey-input;
+    resize: none;
+    padding: 14px 14px;
+    box-sizing: border-box;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      min-height: 175px;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 10px 20px;
+
+      &:focus {
+        outline: 2px solid $dark-grey-light;
+      }
+    }
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 88px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 78px;
+    padding: 0;
   }
 }

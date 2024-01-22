@@ -16,27 +16,25 @@
           <div class="main-header__nav">
             <a class="main-header__logo" href="#">
               <picture>
-                <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-                <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+                <source width="202" height="59" type="image/svg+xml" media="(min-width: 1439px)" srcset="images/logo-desktop.svg">
+                <source width="174" height="50" type="image/svg+xml" media="(min-width: 767px)" srcset="images/logo-tablet.svg">
                 <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
               </picture>
             </a>
 
             <nav class="main-nav main-nav--closed">
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list site-list--desktop">
-                  <li class="site-list__item">
-                    <a class="site-list__link site-list__link--current site-list__link--desktop" href="#">Главная</a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="form.html">Подбор программы</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="main-nav__list site-list site-list--desktop">
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--current site-list__link--desktop" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
             </nav>
           </div>
         </div>
@@ -46,15 +44,15 @@
         <div class="hero__text">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <a class="hero__botton" href="form.html">Подобрать программу</a>
         </div>
         <div class="hero__picture">
           <picture>
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+            <source width="552" height="499" type="image/png" media="(min-width: 1439px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 767px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
             <img class="hero__image" src="images/index-image-mobile@1x.png" srcset="images/index-image-mobile@2x.png" width="280" height="270" alt="Еда Cat Energy">
           </picture>
         </div>
+        <a class="hero__botton" href="form.html">Подобрать программу</a>
       </div>
     </div>
 
@@ -77,7 +75,7 @@
                   лазить по деревьям? Пора на диету! Cat Energy Slim поможет
                   вашему питомцу сбросить лишний вес.
                 </p>
-                <a class="programs__link" href="#">Каталог Slim</a>
+                <a class="programs__link" href="catalog.html">Каталог Slim</a>
               </div>
             </li>
             <li class="programs__item">
@@ -93,7 +91,7 @@
                   Серия Cat Energy Pro поможет вашему коту нарастить
                   необходимые мышцы!
                 </p>
-                <a class="programs__link" href="#">Каталог Pro</a>
+                <a class="programs__link" href="catalog.html">Каталог Pro</a>
               </div>
             </li>
           </ul>
@@ -148,7 +146,7 @@
               </div>
               <p class="advantages__content">
                 Уже через месяц наслаждайтесь
-                изменениями к лучшему
+                изменениями к лучшему<br>
                 вашего питомца!
               </p>
             </li>
@@ -175,7 +173,7 @@
                 <dt class="example__number">60 дней</dt>
                 <dd class="example__description">Затрачено времени</dd>
               </div>
-              <div class="example__item example__item--secondary">
+              <div class="example__item-secondary">
                 <dt>15 000 руб.</dt>
                 <dd>Затраты на питание:</dd>
               </div>
@@ -183,17 +181,24 @@
           </div>
 
           <div class="example__images">
-            <div class="example__image">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
-                <img class="example__image-after" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
-              </picture>
-            </div>
-            <div class="example__image">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
-                <img class="example__image-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Худой кот">
-              </picture>
+            <div class="example__images-wrapper">
+              <div class="example__image-before">
+                <picture>
+                  <source width="560" height="512" type="image/png" media="(min-width: 767px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+                  <img class="example__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
+                </picture>
+              </div>
+              <div class="example__image-after">
+                <picture>
+                  <source width="560" height="512" type="image/png" media="(min-width: 767px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+                  <img class="example__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Худой кот">
+                </picture>
+              </div>
+              <div class="example__button">
+                <button class="example__button-image" type="button">
+                  <span class="visually-hidden">Слайдер</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -201,15 +206,23 @@
 
       <section class="address">
         <div class="address__wrapper">
-          <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <div class="address__content">
-            <p>
-              ул. Большая Конюшенная, д. 19/8
-            </p>
-            <p>
-              Санкт-Петербург
-            </p>
+          <div class="address__info">
+            <h2 class="address__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
+            <div class="address__content">
+              <p>
+                ул. Большая Конюшенная, д. 19/8
+              </p>
+              <p>
+                Санкт-Петербург
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="address__map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe class="address__image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+          </iframe>
         </div>
       </section>
     </main>

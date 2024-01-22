@@ -3,6 +3,7 @@
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -13,6 +14,14 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .copyright__icon {
+    fill: $basic-green;
   }
 }
 

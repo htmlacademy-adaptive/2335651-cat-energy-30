@@ -1,33 +1,50 @@
+.main-container {
+  flex-grow: 1;
+}
+
 .main-container__title {
   @include hero-title;
   @include main-padding;
-  margin: 0;
   border-top: 1px solid $grey-border;
+  margin: 0;
   padding-top: 27px;
-  padding-bottom: 41px;
-  margin-top: -40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     border: none;
-    margin-top: 65px;
+    margin-top: 62px;
   }
 
-  &--form {
-    padding-bottom: 37px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0 70px;
-      padding-bottom: 54px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: $main-padding-desktop;
-      padding-bottom: 55px;
-    }
+  @media (min-width: $desktop-width) {
+    @include center;
+    margin-top: 70px;
   }
 }
+
+
+.main-container__title-form {
+  margin: 0;
+  padding-bottom: 37px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    padding-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    font-size: 60px;
+    margin-bottom: 55px;
+  }
+}
+
 
 .main-container__slogan {
   font-size: 14px;
@@ -54,19 +71,18 @@
 
 .main-container__subtitle {
   @include subtitle;
-  padding: $main-padding-mobile;
   margin: 0;
   max-width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 70px;
+    padding: 0 40px;
     max-width: 323px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: $main-padding-desktop;
+    padding: 0;
   }
 }
 

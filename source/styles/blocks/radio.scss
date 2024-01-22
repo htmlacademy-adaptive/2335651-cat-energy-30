@@ -1,3 +1,50 @@
+.radio {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio__input {
+  &:checked + .radio__text::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    left: 9px;
+    top: 11px;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: 10px;
+      top: 6px;
+    }
+  }
+}
+
 .radio__text {
   @include label;
+  margin-left: 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -6px;
+      left: -2px;
+    }
+  }
 }

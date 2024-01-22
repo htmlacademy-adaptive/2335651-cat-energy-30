@@ -19,8 +19,10 @@
   border: none;
   min-height: 40px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-green-dark;
+    outline: none;
   }
 
   &:active {
@@ -84,27 +86,12 @@
 @mixin footer-icon {
   fill: $basic-brown;
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $basic-green;
   }
 
   &:active {
     fill: $basic-green;
-  }
-}
-
-@mixin input {
-  &:hover {
-    border-color: $special-grey;
-  }
-
-  &:focus {
-    border-color: $dark-grey-light;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 52px;
   }
 }
 
@@ -118,4 +105,22 @@
   @media (min-width: $desktop-width) {
     padding: $main-padding-desktop;
   }
+}
+
+@mixin green-line {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $basic-green;
+    z-index: -1;
+    left: 0;
+  }
+}
+
+@mixin center {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }

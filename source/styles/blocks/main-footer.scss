@@ -11,19 +11,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 57px 30px;
+    min-height: 37px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+
+    @include center;
   }
 }
 
 .main-footer__image {
   fill: $basic-black;
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $special-grey-dark;
   }
 
@@ -39,5 +41,13 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .main-footer__image {
+    fill: $special-grey-dark;
   }
 }

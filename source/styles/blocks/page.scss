@@ -5,6 +5,15 @@
     position: relative;
   }
 
+  @media (max-width: $tablet-width) {
+    &--nojs .page__body--background::before,
+    &--nojs .page__body--background::after {
+      top: 264px;
+    }
+  }
+}
+
+.page__body {
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     &::after {
       display: none;
@@ -54,13 +63,5 @@
         background-image: url("../../images/index-background-desktop@1x.jpg");
       }
     }
-  }
-}
-
-.page__wrapper {
-  position: relative;
-
-  @media (max-width: $tablet-width) {
-    max-height: 65px;
   }
 }

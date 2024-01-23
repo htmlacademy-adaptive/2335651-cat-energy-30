@@ -40,17 +40,30 @@
     }
   }
 
-  &--nojs .main-nav__toggle {
-    display: none;
-  }
+  @media (max-width: $tablet-width) {
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
 
-  &--nojs .main-nav__wrapper {
-    position: static;
-    min-height: 0;
-  }
+    &--nojs .main-nav__wrapper {
+      position: static;
+      min-height: 0;
+    }
 
-  &--nojs .site-list__item {
-    display: block;
+    &--nojs .site-list__item {
+      display: block;
+    }
+
+    &--nojs .main-header {
+      max-height: none;
+    }
+  }
+}
+
+.main-nav__wrapper {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    width: 100%;
   }
 }
 
@@ -71,3 +84,4 @@
     display: none;
   }
 }
+

@@ -8,9 +8,14 @@
 
 .programs__wrapper {
   @include main-padding;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -63,12 +68,13 @@
     width: 570px;
     padding: 46px 52px;
     box-sizing: border-box;
-    align-items: center;
-    margin-bottom: 71px;
+    margin-bottom: 73px;
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (max-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

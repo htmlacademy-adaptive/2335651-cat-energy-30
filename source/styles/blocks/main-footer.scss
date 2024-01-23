@@ -18,6 +18,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+    column-gap: 364px;
 
     @include center;
   }

@@ -12,3 +12,8 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+const mapAddress = document.querySelector('.address__map');
+
+mapAddress.classList.remove('address__map--nojs');

@@ -104,8 +104,13 @@
     }
   }
 
-  &:hover:not(.site-list__link--current) {
+  &:hover:not(.site-list__link--current),
+  &:focus:not(.site-list__link--current) {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active:not(.site-list__link--current) {

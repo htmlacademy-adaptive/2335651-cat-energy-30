@@ -37,10 +37,15 @@
 }
 
 .main-header__logo {
-  @media (max-width: $desktop-width) {
-    min-height: 38px;
-    display: block;
+  display: block;
+
+  @media (max-width: $tablet-width) {
     max-width: 200px;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
   }
 }
 

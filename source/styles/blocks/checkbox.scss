@@ -10,7 +10,7 @@
     background-image: url("../../images/icons/stack.svg#check");
     width: 18px;
     height: 14px;
-    left: 8px;
+    left: 6px;
     top: 11px;
 
     @media (min-width: $tablet-width) {
@@ -25,6 +25,10 @@
     opacity: 0.3;
     cursor: default;
   }
+
+  &:not([disabled]):hover ~ .checkbox__text::before {
+    border-color: $input-grey;
+  }
 }
 
 .checkbox__text {
@@ -34,11 +38,11 @@
   &::before {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid $special-grey;
     left: 0;
-    top: 0;
+    top: 3px;
 
     @media (min-width: $tablet-width) {
       width: 40px;

@@ -78,7 +78,7 @@
     width: 280px;
     margin: 0 auto;
     grid-template-areas: "image title""image text";
-    grid-template-columns: 140px auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -87,6 +87,8 @@
     margin: 0;
     max-width: 76px;
     grid-area: title;
+    margin-bottom: 10px;
+    margin-left: 4px;
   }
 
   @media (min-width: $tablet-width) {
@@ -132,7 +134,6 @@
   line-height: 16px;
   color: $dark-grey-light;
   grid-column: 2;
-  margin-top: 10px;
   margin-bottom: 15px;
 
   @media (max-width: $tablet-width) {
@@ -205,6 +206,10 @@
 .card__image {
   margin: 0 auto;
   display: block;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 3px;
+  }
 }
 
 .card__link-image {
@@ -215,6 +220,7 @@
 
   @media (max-width: $tablet-width) {
     grid-area: image;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $tablet-width) {

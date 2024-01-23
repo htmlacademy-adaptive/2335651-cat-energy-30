@@ -27,7 +27,7 @@
     cursor: default;
   }
 
-  &:hover ~ .radio__text::before {
+  &:not([disabled]):hover ~ .radio__text::before {
     border-color: $input-grey;
   }
 }

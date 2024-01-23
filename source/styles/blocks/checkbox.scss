@@ -1,6 +1,5 @@
 .checkbox {
   position: relative;
-  cursor: pointer;
 }
 
 .checkbox__input {
@@ -34,6 +33,7 @@
 .checkbox__text {
   @include label;
   margin-left: 45px;
+  cursor: pointer;
 
   &::before {
     content: "";

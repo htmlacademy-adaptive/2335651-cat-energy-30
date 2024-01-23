@@ -1,6 +1,5 @@
 .radio {
   position: relative;
-  cursor: pointer;
 }
 
 .radio__input {
@@ -35,6 +34,7 @@
 .radio__text {
   @include label;
   margin-left: 45px;
+  cursor: pointer;
 
   &::before {
     content: "";

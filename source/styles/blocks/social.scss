@@ -10,9 +10,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    column-gap: 24px;
+    column-gap: 8px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 4px;
+    margin-left: 18px;
   }
 }
 

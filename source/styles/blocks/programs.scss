@@ -8,6 +8,10 @@
 
 .programs__wrapper {
   @include main-padding;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .programs__list {
@@ -61,6 +65,10 @@
     box-sizing: border-box;
     align-items: center;
     margin-bottom: 71px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

@@ -4,6 +4,10 @@
   align-items: center;
   column-gap: 13px;
 
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 570px;
     padding: 0;
@@ -39,7 +43,7 @@
       mask-size: 20px 20px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       &::after {
         top: 16px;
         right: 16px;

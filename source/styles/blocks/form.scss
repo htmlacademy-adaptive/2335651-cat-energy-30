@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +83,7 @@
   row-gap: 15px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 20px;
+    row-gap: 18px;
     padding: 0 70px;
   }
 
@@ -162,7 +162,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    padding-top: 74px;
+    padding-top: 72px;
 
     &::before,
     &::after {
@@ -180,7 +180,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -220,7 +220,7 @@
     margin-bottom: 36px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 76px;
+      margin-bottom: 75px;
     }
   }
 
@@ -228,7 +228,7 @@
     margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 88px;
+      margin-bottom: 86px;
     }
 
     @media (min-width: $desktop-width) {

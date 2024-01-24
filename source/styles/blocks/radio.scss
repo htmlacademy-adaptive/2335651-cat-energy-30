@@ -1,6 +1,5 @@
 .radio {
   position: relative;
-  cursor: pointer;
 }
 
 .radio__input {
@@ -21,11 +20,21 @@
       top: 6px;
     }
   }
+
+  &:disabled ~ .radio__text {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &:not([disabled]):hover ~ .radio__text::before {
+    border-color: $input-grey;
+  }
 }
 
 .radio__text {
   @include label;
   margin-left: 45px;
+  cursor: pointer;
 
   &::before {
     content: "";

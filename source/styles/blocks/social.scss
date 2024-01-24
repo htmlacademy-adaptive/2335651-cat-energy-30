@@ -1,20 +1,20 @@
 .social {
-  display: flex;
-  flex-wrap: wrap;
-
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $grey-border;
     width: 100%;
     padding: 17px 0;
+    column-gap: 26px;
+    display: flex;
     justify-content: center;
-    column-gap: 24px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    min-width: 132px;
-    justify-content: space-between;
-    margin-left: 39px;
+    column-gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4px;
+    margin-left: 18px;
   }
 }
 

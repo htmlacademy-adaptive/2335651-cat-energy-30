@@ -1,10 +1,9 @@
 .site-list {
   @media (max-width: $tablet-width) {
-    position: absolute;
-    z-index: 1;
     width: 100%;
-    left: 0;
-    top: 65px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ebebeb;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,7 +38,7 @@
     display: flex;
     align-items: center;
     min-height: 50px;
-    margin-right: 33px;
+    margin-right: 37px;
 
     &:last-child {
       margin-right: 0;
@@ -48,6 +47,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 59px;
+    margin-right: 35px;
   }
 }
 
@@ -71,6 +71,10 @@
 
     @media (min-width: $tablet-width) {
       top: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 35px;
     }
   }
 
@@ -100,8 +104,13 @@
     }
   }
 
-  &:hover:not(.site-list__link--current) {
+  &:hover:not(.site-list__link--current),
+  &:focus:not(.site-list__link--current) {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active:not(.site-list__link--current) {

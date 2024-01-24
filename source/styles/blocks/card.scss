@@ -28,19 +28,20 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 78px;
+    padding-top: 79px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 160px;
+      padding-top: 158px;
       padding-bottom: 40px;
       background-color: $basic-white;
-      height: 429px;
+      min-height: 429px;
       margin-top: 73px;
       border: 2px solid $basic-grey;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 147px;
+      margin-top: 70px;
     }
 
     &::before {
@@ -49,7 +50,7 @@
       width: 30px;
       height: 2px;
       background-color: $grey-plus;
-      top: 39px;
+      top: 40px;
     }
 
     &::after {
@@ -59,7 +60,7 @@
       height: 2px;
       background-color: $grey-plus;
       transform: rotate(90deg);
-      top: 39px;
+      top: 40px;
     }
 
     @media (min-width: $tablet-width) {
@@ -78,14 +79,19 @@
     width: 280px;
     margin: 0 auto;
     grid-template-areas: "image title""image text";
-    grid-template-columns: 140px auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .card__title {
-  margin: 0;
-  max-width: 76px;
-  grid-area: title;
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    margin-top: 2px;
+    max-width: 76px;
+    grid-area: title;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 134px;
@@ -130,20 +136,23 @@
   line-height: 16px;
   color: $dark-grey-light;
   grid-column: 2;
-  margin-top: 10px;
   margin-bottom: 15px;
-  grid-area: text;
+
+  @media (max-width: $tablet-width) {
+    grid-area: text;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     min-width: 100%;
   }
 
   &--more {
     margin-top: 8px;
     margin-bottom: 21px;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       text-align: center;
@@ -166,12 +175,13 @@
 
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid $special-grey;
-      padding-bottom: 4px;
+      padding-bottom: 7px;
       margin-bottom: 4px;
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 6px;
+      margin-bottom: 8px;
     }
   }
 }
@@ -200,6 +210,10 @@
 .card__image {
   margin: 0 auto;
   display: block;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 3px;
+  }
 }
 
 .card__link-image {
@@ -207,7 +221,12 @@
   justify-content: center;
   min-height: 107px;
   align-items: center;
-  grid-area: image;
+  margin-bottom: 17px;
+
+  @media (max-width: $tablet-width) {
+    grid-area: image;
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 206px;

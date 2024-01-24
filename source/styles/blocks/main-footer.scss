@@ -8,15 +8,17 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 57px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 108px;
+    align-items: start;
+    padding: 55px 30px;
     min-height: 37px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+    column-gap: 364px;
 
     @include center;
   }
@@ -41,6 +43,11 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
   }
 
   &:focus {

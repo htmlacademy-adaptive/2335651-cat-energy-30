@@ -1,5 +1,4 @@
 .form {
-  padding-top: 38px;
   padding-bottom: 32px;
 
   & fieldset {
@@ -8,11 +7,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 79px;
+    padding-bottom: 59px;
   }
 }
 
@@ -42,6 +41,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     padding: $main-padding-desktop;
     padding-bottom: 69px;
     column-gap: 81px;
@@ -54,7 +54,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
+  row-gap: 18px;
   padding-bottom: 24px;
   position: relative;
   margin: 0;
@@ -80,7 +80,8 @@
   @include main-padding;
   display: flex;
   flex-direction: column;
-  row-gap: 13px;
+  row-gap: 18px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     row-gap: 20px;
@@ -94,6 +95,7 @@
 
   &--filter {
     padding: 22px 19px 18px;
+    row-gap: 13px;
 
     @media (min-width: $tablet-width) {
       border: 1px solid $special-grey-input;
@@ -111,11 +113,11 @@
   }
 
   &--add {
-    margin-top: 34px;
     padding: $main-padding-mobile;
+    row-gap: 13px;
+
 
     @media (min-width: $tablet-width) {
-      margin-top: 62px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 0 40px;
@@ -124,11 +126,11 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 80px;
       padding: 0;
-      padding-bottom: 65px;
+      margin-bottom: 66px;
     }
   }
 }
@@ -145,8 +147,8 @@
   margin: 0;
   padding: 0;
   border: none;
-  padding-top: 25px;
-  padding-bottom: 26px;
+  padding-top: 24px;
+  padding-bottom: 27px;
   position: relative;
 
   &::before,
@@ -161,7 +163,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    padding-top: 74px;
+    padding-top: 72px;
 
     &::before,
     &::after {
@@ -175,17 +177,14 @@
 }
 
 .form__email {
-  margin-top: 36px;
   padding: $main-padding-mobile;
 
   @media (min-width: $tablet-width) {
-    margin-top: 76px;
     padding: 0 40px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 76px;
     margin-bottom: 0;
   }
 }
@@ -216,6 +215,34 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -40px;
+  }
+
+  &--contacts {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+    }
+  }
+
+  &--comments {
+    margin-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 86px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
+    }
+  }
+
+  &--add {
+    margin-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 62px;
+    }
   }
 }
 
@@ -279,6 +306,7 @@
   font-size: 16px;
   width: 100%;
   cursor: pointer;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     width: 284px;
@@ -298,17 +326,19 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
-  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     margin-top: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+  }
 }
 
 .form__textarea {
   padding: $main-padding-mobile;
-  margin-top: 38px;
 
   & textarea {
     font-family: $primary-font;
@@ -330,24 +360,23 @@
       font-size: 20px;
       line-height: 30px;
       padding: 10px 20px;
-
-      &:focus {
-        outline: 2px solid $dark-grey-light;
-      }
     }
 
     &::placeholder {
       opacity: 1;
+      color: $dark-grey-light;
+    }
+
+    &:focus {
+      outline: 2px solid $dark-grey-light;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 88px;
     padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 78px;
     padding: 0;
   }
 }

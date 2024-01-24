@@ -1,15 +1,20 @@
 .hero {
   min-height: 472px;
   padding: $main-padding-mobile;
-  padding-top: 27px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 27px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 810px;
     padding: $main-padding-tablet;
-    padding-top: 62px;
     min-width: 709px;
-    position: relative;
     margin: 0 auto;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +35,32 @@
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-top: 105px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      content: "";
+      width: 100%;
+      min-height: 302px;
+      right: 0;
+      top: 0;
+      position: absolute;
+      background-color: $basic-green-light;
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      min-height: 302px;
+      right: 0;
+      top: 0;
+      position: absolute;
+      background-image: url("../../images/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
   }
 }
 
@@ -70,6 +101,7 @@
     color: $basic-black;
     text-align: left;
     margin-bottom: 50px;
+    max-width: 430px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,11 +116,12 @@
   @media (min-width: $tablet-width) {
     max-width: 709px;
     position: absolute;
+    top: 201px;
     z-index: -1;
-    top: 262px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     top: 25px;
     left: 557px;
     z-index: 1;
@@ -113,6 +146,7 @@
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 15px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
     width: 244px;

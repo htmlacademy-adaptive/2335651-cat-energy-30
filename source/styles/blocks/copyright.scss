@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
+    align-items: start;
     column-gap: 23px;
   }
 
@@ -30,9 +30,12 @@
   font-size: 16px;
   line-height: 20px;
   color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .copyright__icon {
   @include footer-icon;
 }
-

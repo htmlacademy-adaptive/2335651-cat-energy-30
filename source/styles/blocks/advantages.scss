@@ -16,21 +16,21 @@
 
 .advantages__wrapper {
   @include main-padding;
-  padding-bottom: 38px;
+  padding-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 71px;
+    padding-bottom: 68px;
   }
 }
 
 .advantages__title {
   @include secondary-title;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
@@ -51,7 +51,8 @@
     counter-reset: my-counter;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 153px;
+    align-items: start;
+    column-gap: 60px;
     row-gap: 37px;
     margin: 0 auto;
     max-width: 708px;
@@ -66,8 +67,8 @@
 
 .advantages__item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   margin-bottom: 20px;
   column-gap: 20px;
 

@@ -8,12 +8,12 @@
   border-top: 1px solid $grey-border;
   margin: 0;
   padding-top: 27px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     border: none;
-    margin-top: 62px;
   }
 
   @media (min-width: $desktop-width) {

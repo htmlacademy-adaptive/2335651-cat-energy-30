@@ -99,7 +99,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
-    margin-top: 31px;
   }
 }
 
@@ -112,8 +111,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 340px;
-    margin-top: 24px;
-    margin-bottom: 48px;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,9 +133,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    grid-row: 3;
     margin: 0;
     max-width: 128px;
+    grid-row: 2;
+    margin-top: 171px;
   }
 
   @media (min-width: $desktop-width) {

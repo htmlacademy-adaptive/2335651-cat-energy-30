@@ -82,9 +82,11 @@
 
 .field__icon {
   position: absolute;
-  right: 13px;
-  top: 13px;
+  right: 12px;
+  top: 12px;
   stroke: $basic-black;
+  width: 20px;
+  height: 20px;
 
   @media (min-width: $tablet-width) {
     top: 16px;

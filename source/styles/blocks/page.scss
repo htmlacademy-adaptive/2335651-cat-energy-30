@@ -25,42 +25,29 @@
   }
 
   &--background {
-    &::after {
-      content: "";
-      width: 100%;
-      min-height: 302px;
-      right: 0;
-      top: 65px;
-      position: absolute;
-      background-color: $basic-green-light;
-      z-index: -1;
-    }
-
-    &::before {
-      content: "";
-      width: 100%;
-      min-height: 302px;
-      right: 0;
-      top: 65px;
-      position: absolute;
-      background-image: url("../../images/index-background-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: -1;
-    }
-
     @media (min-width: $desktop-width) {
       &::after {
+        content: "";
+        right: 0;
+        position: absolute;
+        background-color: $basic-green-light;
+        z-index: -1;
         width: 50%;
         min-height: 694px;
         top: 0;
       }
 
       &::before {
+        content: "";
+        right: 0;
+        position: absolute;
+        background-image: url("../../images/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
         width: 50%;
         min-height: 694px;
         top: 0;
-        background-image: url("../../images/index-background-desktop@1x.jpg");
       }
     }
   }

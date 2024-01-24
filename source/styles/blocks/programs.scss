@@ -129,7 +129,7 @@
   grid-area: link;
   position: relative;
   margin-top: 4px;
-  max-width: 150px;
+  max-width: 100px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -150,7 +150,7 @@
     width: 17px;
     height: 2px;
     background-color: $basic-black;
-    top: 50%;
+    top: 8px;
     left: 102px;
     transition: 0.2s;
 

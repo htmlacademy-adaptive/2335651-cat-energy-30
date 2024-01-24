@@ -99,21 +99,21 @@
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 362px;
+  min-height: 362px;
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    min-height: 400px;
   }
 }
 
 .address__picture {
   object-fit: cover;
   width: 100%;
-  height: 362px;
+  min-height: 362px;
   vertical-align: bottom;
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    min-height: 400px;
   }
 }
 

@@ -1,6 +1,7 @@
 .hero {
   min-height: 472px;
   padding: $main-padding-mobile;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -34,6 +35,32 @@
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-top: 105px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      content: "";
+      width: 100%;
+      min-height: 302px;
+      right: 0;
+      top: 0;
+      position: absolute;
+      background-color: $basic-green-light;
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      min-height: 302px;
+      right: 0;
+      top: 0;
+      position: absolute;
+      background-image: url("../../images/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
   }
 }
 

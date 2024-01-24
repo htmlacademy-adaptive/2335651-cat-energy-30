@@ -206,6 +206,10 @@
       transition: none;
     }
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .programs__icon {

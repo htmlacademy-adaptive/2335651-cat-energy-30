@@ -359,15 +359,15 @@
       font-size: 20px;
       line-height: 30px;
       padding: 10px 20px;
-
-      &:focus {
-        outline: 2px solid $dark-grey-light;
-      }
     }
 
     &::placeholder {
       opacity: 1;
       color: $dark-grey-light;
+    }
+
+    &:focus {
+      outline: 2px solid $dark-grey-light;
     }
   }
 

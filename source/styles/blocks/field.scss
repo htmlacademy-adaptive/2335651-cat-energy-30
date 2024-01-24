@@ -22,85 +22,14 @@
 .field__container-input {
   width: 100%;
   height: 42px;
-  border: 1px solid $special-grey-input;
+  position: relative;
 
   & input {
     padding-right: 45px;
   }
 
-  &--email {
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 20px;
-      height: 20px;
-      top: 13px;
-      right: 13px;
-      background-size: 20px 20px;
-      background-color: $basic-black;
-      mask-image: url("../../images/icons/stack.svg#icon-email");
-      mask-size: 20px 20px;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::after {
-        top: 16px;
-        right: 16px;
-      }
-    }
-  }
-
-  &--phone {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 13px;
-      right: 13px;
-      background-size: 20px 20px;
-      background-color: $basic-black;
-      mask-image: url("../../images/icons/stack.svg#icon-phone");
-      mask-size: 20px 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      &::after {
-        top: 16px;
-        right: 16px;
-      }
-    }
-  }
-
-  &--icon {
-    mask-position: right 13px top 50%;
-    position: relative;
-  }
-
   @media (min-width: $tablet-width) {
     height: 52px;
-  }
-
-
-  &:hover {
-    border-color: $special-grey;
-  }
-
-  &:focus-within::after {
-    background-color: $basic-green;
-  }
-
-  &:focus-within {
-    border: 2px solid $dark-grey-light;
-    outline: none;
-    box-sizing: border-box;
-  }
-
-  &:focus-within:invalid {
-    border: 2px solid $error-pink;
-    outline: none;
-    box-sizing: border-box;
   }
 }
 
@@ -114,7 +43,7 @@
   box-sizing: border-box;
   padding: 10px 15px;
   background-color: transparent;
-  border: none;
+  border: 1px solid $special-grey-input;
   outline: none;
 
   @media (min-width: $tablet-width) {
@@ -125,6 +54,39 @@
 
   &::placeholder {
     opacity: 1;
-    color: $dark-grey-light;
+  }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $dark-grey-light;
+  }
+
+  &:focus ~ .field__icon {
+    stroke: $basic-green;
+  }
+
+  &:focus:invalid {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $error-pink;
+  }
+
+  &:focus:invalid ~ .field__icon {
+    stroke: $error-pink;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  stroke: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 16px;
   }
 }

@@ -80,8 +80,9 @@
     text-align: right;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     line-height: 20px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {

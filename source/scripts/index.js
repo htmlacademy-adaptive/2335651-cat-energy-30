@@ -19,4 +19,3 @@ const page = document.querySelector('.page--nojs');
 
 mapAddress.classList.remove('address__map--nojs');
 page.classList.remove('page--nojs');
-

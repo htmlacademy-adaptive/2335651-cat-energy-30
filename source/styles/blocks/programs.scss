@@ -99,6 +99,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
+    margin-top: 31px;
   }
 }
 
@@ -142,6 +143,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1;
     margin-top: 4px;
+    grid-row: 3;
   }
 
   &::before {

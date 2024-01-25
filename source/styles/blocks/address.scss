@@ -43,12 +43,6 @@
     box-sizing: border-box;
     column-gap: 87px;
   }
-
-  &--background {
-    @media (max-width: $desktop-width) {
-      background-color: $basic-grey;
-    }
-  }
 }
 
 .address__title {

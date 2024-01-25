@@ -1,16 +1,11 @@
 .site-list {
   list-style-type: none;
+  border-bottom: 1px solid #ebebeb;
   padding: 0;
   margin: 0;
 
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #ebebeb;
-  }
-
   @media (min-width: $tablet-width) {
+    border-bottom: none;
     display: flex;
     flex-wrap: wrap;
     max-width: 450px;
@@ -27,22 +22,23 @@
 
 .site-list__item {
   position: relative;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    min-height: 66px;
-    background-color: $basic-white;
-    border-top: 1px solid $special-grey-light;
-    text-align: center;
-    padding: 19px 20px;
-    box-sizing: border-box;
-  }
+  width: 100%;
+  min-height: 66px;
+  background-color: $basic-white;
+  border-top: 1px solid $special-grey-light;
+  text-align: center;
+  padding: 19px 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     min-height: 50px;
     margin-right: 37px;
+    border-top: none;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
 
     &:last-child {
       margin-right: 0;

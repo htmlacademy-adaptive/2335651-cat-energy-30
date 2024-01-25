@@ -37,16 +37,17 @@
 }
 
 .main-footer__logo {
-  @media (max-width: $tablet-width) {
-    border-bottom: 1px solid $grey-border;
-    width: 100%;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
+  border-bottom: 1px solid $grey-border;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
+    border-bottom: none;
+    width: auto;
+    padding-bottom: 0;
+    display: block;
     margin-top: 5px;
   }
 

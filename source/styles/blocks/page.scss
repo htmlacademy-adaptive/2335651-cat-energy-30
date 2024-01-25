@@ -4,13 +4,6 @@
   @media (min-width: $desktop-width) {
     position: relative;
   }
-
-  @media (max-width: $tablet-width) {
-    &--nojs .page__body--background::before,
-    &--nojs .page__body--background::after {
-      top: 264px;
-    }
-  }
 }
 
 .page__body {

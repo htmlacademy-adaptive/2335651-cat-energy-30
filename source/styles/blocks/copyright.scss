@@ -1,15 +1,15 @@
 .copyright {
-  @media (max-width: $tablet-width) {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: end;
     align-items: start;
     column-gap: 23px;
+    padding-top: 0;
   }
 
   &:active {

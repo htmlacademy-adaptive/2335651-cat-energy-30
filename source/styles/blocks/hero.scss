@@ -2,12 +2,9 @@
   min-height: 472px;
   padding: $main-padding-mobile;
   position: relative;
-
-  @media (max-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 27px;
-  }
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     min-height: 810px;
@@ -15,6 +12,9 @@
     min-width: 709px;
     margin: 0 auto;
     position: relative;
+    display: block;
+    flex-direction: row;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,39 +28,46 @@
 }
 
 .hero__text {
+  &::after {
+    content: "";
+    width: 100%;
+    min-height: 302px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: $basic-green-light;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    min-height: 302px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-image: url("../../images/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+
   @media (min-width: $tablet-width) {
     padding: 0 90px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-top: 105px;
-  }
-
-  @media (max-width: $tablet-width) {
-    &::after {
-      content: "";
-      width: 100%;
-      min-height: 302px;
-      right: 0;
-      top: 0;
-      position: absolute;
-      background-color: $basic-green-light;
-      z-index: -1;
-    }
-
-    &::before {
-      content: "";
-      width: 100%;
-      min-height: 302px;
-      right: 0;
-      top: 0;
-      position: absolute;
-      background-image: url("../../images/index-background-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: -1;
-    }
   }
 }
 
@@ -68,11 +75,8 @@
   color: $basic-white;
   text-align: center;
   max-width: 400px;
-
-  @media (max-width: $tablet-width) {
-    margin: 0 auto;
-    margin-bottom: 25px;
-  }
+  margin: 0 auto;
+  margin-bottom: 25px;
 
   @include hero-title;
 

@@ -43,12 +43,6 @@
     box-sizing: border-box;
     column-gap: 87px;
   }
-
-  &--background {
-    @media (max-width: $desktop-width) {
-      background-color: $basic-grey;
-    }
-  }
 }
 
 .address__title {
@@ -127,6 +121,10 @@
 }
 
 .address__map {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 100%;

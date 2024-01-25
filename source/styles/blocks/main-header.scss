@@ -31,16 +31,19 @@
 }
 
 .main-header__wrapper {
-  @media (max-width: $tablet-width) {
-    padding: 13px 20px 10px;
+  padding: 13px 20px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
 .main-header__logo {
   display: block;
+  max-width: 200px;
 
-  @media (max-width: $tablet-width) {
-    max-width: 200px;
+  @media (min-width: $tablet-width) {
+    max-width: none;
   }
 
   &:focus {

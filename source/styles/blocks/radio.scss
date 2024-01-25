@@ -29,6 +29,10 @@
   &:not([disabled]):hover ~ .radio__text::before {
     border-color: $input-grey;
   }
+
+  &:not([disabled]):focus ~ .radio__text::before {
+    outline: 2px solid $dark-grey-light;
+  }
 }
 
 .radio__text {

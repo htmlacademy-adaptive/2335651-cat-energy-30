@@ -12,7 +12,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 108px;
     align-items: start;
-    padding: 55px 30px;
+    padding: 53px 30px;
     min-height: 37px;
   }
 
@@ -37,16 +37,17 @@
 }
 
 .main-footer__logo {
-  @media (max-width: $tablet-width) {
-    border-bottom: 1px solid $grey-border;
-    width: 100%;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
+  border-bottom: 1px solid $grey-border;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
+    border-bottom: none;
+    width: auto;
+    padding-bottom: 0;
+    display: block;
     margin-top: 5px;
   }
 

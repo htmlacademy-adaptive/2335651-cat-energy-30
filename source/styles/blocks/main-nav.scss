@@ -14,7 +14,7 @@
       box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
     }
 
-    &--closed .site-list {
+    &--closed .main-nav__list {
       display: none;
     }
 
@@ -50,7 +50,7 @@
       min-height: 0;
     }
 
-    &--nojs .site-list {
+    &--nojs .main-nav__list {
       display: block;
     }
 

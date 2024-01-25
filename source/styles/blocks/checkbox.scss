@@ -28,6 +28,10 @@
   &:not([disabled]):hover ~ .checkbox__text::before {
     border-color: $input-grey;
   }
+
+  &:not([disabled]):focus ~ .checkbox__text::before {
+    outline: 2px solid $dark-grey-light;
+  }
 }
 
 .checkbox__text {

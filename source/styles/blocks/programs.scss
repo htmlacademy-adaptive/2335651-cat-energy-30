@@ -117,14 +117,15 @@
   margin-top: 22px;
   margin-bottom: 38px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 340px;
     margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     margin-bottom: 23px;
-    margin-top: 39px;
+    margin-top: 73px;
   }
 }
 
@@ -228,7 +229,7 @@
   grid-area: icon;
   margin-top: 4px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
     grid-column: 2;

@@ -7,13 +7,23 @@
 }
 
 .page__body {
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
+  @media (min-width: $tablet-width) {
     &::after {
       display: none;
     }
 
     &::before {
       display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      display: block;
+    }
+
+    &::before {
+      display: block;
     }
   }
 

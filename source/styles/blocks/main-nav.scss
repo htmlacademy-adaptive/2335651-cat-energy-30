@@ -60,10 +60,10 @@
 
   &--nojs .main-nav__list {
     display: block;
-  }
 
-  &--nojs .main-header {
-    max-height: none;
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 }
 
